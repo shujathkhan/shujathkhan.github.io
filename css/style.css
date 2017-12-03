@@ -1,0 +1,644 @@
+html,body{
+	height:100%;
+	overflow:hidden;
+	position:relative;
+}
+body{
+	margin:0;
+	padding:0;
+	color:#373737;
+	background:#b1cfd6;
+}
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+
+.cloud:before,
+.cloud:after,
+.truck .body:before,
+.truck .body:after,
+.truck .front:before,
+.truck .front:after,
+.truck .front .roof:before,
+.truck .front .window:before,
+.truck .front .window:after,
+.truck .back:before,
+.truck .back:after,
+.truck .back .stand:after,
+.truck .back .silencer:before,
+.truck .back .silencer:after,
+.truck .wheels:before,
+.truck .wheels:after,
+.truck .hydraulic:before,
+.truck .hydraulic:after,
+.truck .tool-box:before,
+.truck .tool-box:after,
+.truck .main .top-cog:before,
+.truck .main .top-cog:after,
+.truck .main .top-cog-a:before,
+.truck .main .top-cog-b:before,
+.truck .main .top-cog-c:before,
+.truck .main .hydraulic-piston:before,
+.truck .main .box:after,
+.truck .main .box .window:before,
+.truck .main .box .window:after,
+.truck .main .ropes .rope:before,
+.truck .main .ropes .rope:after,
+.truck .hanging .rope:before,
+.truck .hanging .rope:after{
+	content:'';
+	position:absolute;
+}
+
+.sky{
+	z-index:-10;
+	height:500px;
+	position:relative;
+	background:-webkit-linear-gradient(top,#184c76 0%,#92cae5 100%);
+	background:linear-gradient(to bottom,#184c76 0%,#92cae5 100%);
+}
+.cloud{
+	height:15px;
+	width:135px;
+	position:absolute;
+	border-radius:15px;
+	background:#70acc9;
+}
+.cloud:before,
+.cloud:after{
+	bottom:0;
+	width:35px;
+	height:35px;
+	border-radius:50%;
+	background:inherit;
+}
+.cloud:before{left:10px}
+.cloud:after{right:10px}
+.cloud>div{
+	left:50%;
+	bottom:0;
+	width:60px;
+	height:60px;
+	margin-left:-30px;
+	position:absolute;
+	border-radius:50%;
+	background:inherit;
+}
+.cloud.big{top:30%;right:25%}
+.cloud.small{left:10%;-webkit-transform:scale(.6);transform:scale(.6);top:45%}
+
+.truck .body{
+	top:50%;
+	left:50%;
+	width:250px;
+	height:20px;
+	position:fixed;
+	margin-top:-10px;
+	background:#20201e;
+	margin-left:-125px;
+}
+.truck .body:before,
+.truck .body:after{
+	width:150px;
+}
+.truck .body:before{
+	top:0;
+	right:0;
+	height:8px;
+	background:#706e64;
+}
+.truck .body:after{
+	right:0;
+	bottom:0;
+	height:5px;
+	background:#2b2c26;
+}
+
+.truck .front{
+	left:0;
+	top:-15px;
+	width:45px;
+	height:43px;
+	color:#e4cc3a;
+	position:absolute;
+	background:#f6dc3f;
+}
+.truck .front:before{
+	left:-2px;
+	width:15px;
+	bottom:-2px;
+	height:10px;
+	background:#20201e;
+	box-shadow:15px 0 0,21px 0 0;
+}
+.truck .front:after{
+	bottom:0;
+	width:31px;
+	height:18px;
+	right:-20px;
+	background:#20201e;
+	border-radius:30px 30px 0 0;
+}
+.truck .front .roof{
+	right:0;
+	width:30px;
+	height:20px;
+	bottom:42px;
+	background:#f6dc3f;
+	position:absolute;
+}
+.truck .front .roof:before{
+	top:0;
+	width:0;
+	height:0;
+	left:-15px;
+	border:10px solid #f6dc3f;
+	border-top:12px solid transparent;
+	border-left:5px solid transparent;
+}
+.truck .front .window{
+	right:0;
+	width:10px;
+	height:15px;
+	bottom:44px;
+	position:absolute;
+	background:#317B9C;
+	-webkit-perspective:400px;
+	        perspective:400px;
+	border-radius:2px 0 0 2px;
+}
+.truck .front .window:before,
+.truck .front .window:after{
+	background:inherit;
+}
+.truck .front .window:before{
+	top:-4px;
+	width:4px;
+	left:-29px;
+	height:24px;
+	-webkit-transform:rotate(35deg);
+	        transform:rotate(35deg);
+	border-radius:0 3px 3px 0;
+}
+.truck .front .window:after{
+	left:-18px;
+	width:15px;
+	height:15px;
+	border-radius:2px;
+}
+
+.truck .back{
+	left:67px;
+	width:30px;
+	height:5px;
+	position:absolute;
+	background:#42423c;
+}
+.truck .back:before,
+.truck .back:after{
+	right:0;
+	height:5px;
+	width:10px;
+	background:inherit;
+	-webkit-transform:skew(40deg);
+	        transform:skew(40deg);
+}
+.truck .back:before{top:5px;width:20px}
+.truck .back:after{top:10px}
+.truck .back .stand{
+	left:10px;
+	width:3px;
+	bottom:5px;
+	height:33px;
+	position:absolute;
+	background:#34332e;
+}
+.truck .back .stand:after{
+	left:50%;
+	bottom:0;
+	width:12px;
+	height:6px;
+	margin-left:-6px;
+	background:inherit;
+}
+.truck .back .silencer{
+	left:-15px;
+	width:10px;
+	bottom:2px;
+	height:30px;
+	position:absolute;
+	background:#706e64;
+}
+.truck .back .silencer:before{
+	left:50%;
+	width:4px;
+	bottom:30px;
+	height:10px;
+	margin-left:-2px;
+	background:#42423c;
+}
+.truck .back .silencer:after{
+	left:3px;
+	width:16px;
+	height:8px;
+	bottom:-5px;
+	border:2px solid #706e64;
+	border-radius:5px 0 0 5px;
+	border-right-color:transparent;
+	border-top-color:transparent;
+}
+
+.truck .wheels{
+	position:relative;
+}
+.truck .wheels:before,
+.truck .wheels:after{
+	top:13px;
+	z-index:5;
+	width:28px;
+	height:28px;
+	border-radius:50%;
+	background:#34332e;
+	border:7px solid #34332e;
+	box-shadow:0 0 0 5px #cacab8 inset;
+}
+.truck .wheels:before{
+	left:37px;
+}
+.truck .wheels:after{
+	right:37px;
+}
+
+.truck .hydraulic{
+	top:-5px;
+	left:95px;
+	width:5px;
+	height:48px;
+	position:absolute;
+	background:#706e64;
+}
+.truck .hydraulic:before{
+	height:15px;
+	width:inherit;
+	background:-webkit-repeating-linear-gradient(121deg, #706e64, #706e64 10px, #ff0 10px, #ff0 12px);
+	background:repeating-linear-gradient(-31deg, #706e64, #706e64 10px, #ff0 10px, #ff0 12px);
+	background-size:20px 5px;
+	background-repeat:repeat-y;
+}
+.truck .hydraulic:after{
+	height:0;
+	bottom:0;
+	left:50%;
+	width:12px;
+	margin-left:-6px;
+	position:absolute;
+	border:3px solid transparent;
+	border-bottom-color:#cacab8;
+}
+
+.truck .tool-box{
+	top:10px;
+	z-index:2;
+	left:110px;
+	width:28px;
+	height:18px;
+	position:absolute;
+	background:#706e64;
+}
+.truck .tool-box:before,
+.truck .tool-box:after{
+	top:0;
+	width:4px;
+	height:15px;
+	background:#34332e;
+}
+.truck .tool-box:before{left:5px}
+.truck .tool-box:after{right:5px}
+
+
+.truck .main{
+	right:50px;
+	bottom:25px;
+	position:absolute;
+}
+.truck .main .top-cog{
+	right:0;
+	top:-18px;
+	height:15px;
+	width:185px;
+	position:absolute;
+	background:#f6dc3f;
+	-webkit-transform:rotate(12deg);
+	        transform:rotate(12deg);
+}
+.truck .main .top-cog:before,
+.truck .main .top-cog:after,
+.truck .main .top-cog-a:before{
+	width:0;
+	height:0;
+}
+.truck .main .top-cog:before{
+	left:-7.5px;
+	border:8px solid #f6dc3f;
+	border-left:0 solid transparent;
+	border-top:7px solid transparent;
+}
+.truck .main .top-cog:after{
+	left:90px;
+	bottom:-18px;
+	border:10px solid transparent;
+	border-top:10px solid #f6dc3f;
+	-webkit-transform:rotate(-10deg);
+	        transform:rotate(-10deg);
+}
+.truck .main .top-cog-a,
+.truck .main .top-cog-b{
+	top:50%;
+	z-index:-1;
+	left:-30px;
+	width:30px;
+	height:12px;
+	margin-top:-6px;
+	position:absolute;
+	background:#51504a;
+}
+.truck .main .top-cog-b{
+	left:-50px;
+	height:10px;
+	margin-top:-5px;
+}
+.truck .main .top-cog-a:before,
+.truck .main .top-cog-b:before{
+	left:-4.5px;
+	border:5px solid #51504a;
+	border-left:0 solid transparent;
+	border-top:7px solid transparent;
+}
+.truck .main .top-cog-b:before{
+	border-top-width:8px;
+}
+.truck .main .top-cog-c{
+	top:50%;
+	height:6px;
+	z-index:-2;
+	width:20px;
+	left:-70px;
+	margin-top:-4px;
+	position:relative;
+	background:#f6dc3f;
+	-webkit-transform:skewX(-35deg);
+	        transform:skewX(-35deg);
+}
+.truck .main .top-cog-c:before{
+	top:5px;
+	left:-12px;
+	width:20px;
+	height:5px;
+	background-color:inherit;
+	border-left:2px solid #51504a;
+	-webkit-transform:skew(35deg) rotate(-30deg);
+	        transform:skew(35deg) rotate(-30deg);
+}
+.truck .main .hydraulic-piston{
+	right:25px;
+	height:8px;
+	width:40px;
+	bottom:-15px;
+	position:absolute;
+	background:#51504a;
+	-webkit-transform:rotate(12deg);
+	        transform:rotate(12deg);
+}
+.truck .main .hydraulic-piston:before{
+	top:50%;
+	left:-20px;
+	height:4px;
+	width:20px;
+	margin-top:-2px;
+	background:#cecfc0;
+}
+
+.truck .main .box{
+	width:35px;
+	height:40px;
+	position:relative;
+	border-radius:4px;
+	background:#f6dc3f;
+}
+.truck .main .box:after{
+	left:50%;
+	width:24px;
+	height:5px;
+	bottom:-5px;
+	margin-left:-12px;
+	background:#30302d;
+	border:1px solid #464f4a;
+}
+.truck .main .box .window{
+	top:8px;
+	left:0;
+	width:100%;
+	height:20px;
+	position:absolute;
+	border:2px solid #f6dc3f;
+	background:rgba(0,0,0,.3);
+	box-shadow:0 5px #b4bf5a inset;
+}
+.truck .main .box .window:before{
+	top:16px;
+	border:5px solid rgba(0,0,0,.3);
+	border-bottom:2px solid transparent;
+	border-right:10px solid transparent;
+}
+.truck .main .box .window:after{
+	left:50%;
+	width:2px;
+	height:inherit;
+	background:#f6dc3f;
+}
+
+.truck .main .ropes{
+	position:absolute;
+}
+.truck .main .ropes .rope{
+	position:absolute;
+	border-radius:50%;
+	border:1px solid #34332e;
+}
+.truck .main .ropes .rope:before,
+.truck .main .ropes .rope:after{
+	background:#34332e;
+	border-radius:inherit;
+}
+.truck .main .ropes .rope-a{
+	top:-2px;
+	left:-55px;
+	width:30px;
+	height:20px;
+	border-top-color:transparent;
+	border-left-color:transparent;
+	-webkit-transform:rotate(15deg);
+	        transform:rotate(15deg);
+}
+.truck .main .ropes .rope-a:before,
+.truck .main .ropes .rope-a:after{
+	width:2px;
+	height:2px;
+}
+
+.truck .main .ropes .rope-a:before{
+	top:14px;
+	left:2px;
+}
+.truck .main .ropes .rope-a:after{
+	top:2px;
+	left:24px;
+}
+
+.truck .main .ropes .rope-b{
+	top:-9px;
+	left:-29px;
+	width:30px;
+	height:30px;
+	border-top-color:transparent;
+	border-left-color:transparent;
+	-webkit-transform: rotate(52deg);
+	        transform: rotate(52deg);
+}
+.truck .main .ropes .rope-b:after{
+	top:3px;
+	left:24px;
+	width:2px;
+	height:2px;
+}
+
+.truck .main .ropes .rope-c{
+	z-index:1;
+	top:-120px;
+	left:-21px;
+	width:140px;
+	height:150px;
+	border-top-color:transparent;
+	border-left-color:transparent;
+	border-right-color:transparent;
+}
+.truck .main .ropes .rope-c:after{
+	top:123px;
+	width:6px;
+	left:115px;
+	height:6px;
+}
+
+.truck .main .ropes .rope-d{
+	z-index:1;
+	top:-20px;
+	left:95px;
+	width:75px;
+	height:65px;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	-webkit-transform:rotate(-30deg);
+	        transform:rotate(-30deg);
+}
+.truck .main .ropes .rope-e,
+.truck .main .ropes .rope-f,
+.truck .main .ropes .rope-g{
+	top:-468px;
+	z-index:-10;
+	left:-672px;
+	width:800px;
+	height:400px;
+	border-color:#c1d5df;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-left-color:transparent;
+	-webkit-transform:rotate(35deg);
+	        transform:rotate(35deg);
+}
+.truck .main .ropes .rope-f{left:-680px}
+.truck .main .ropes .rope-g{left:-690px}
+
+.ground{
+	left:0;
+	top:50%;
+	width:100%;
+	z-index:-4;
+	height:1000px;
+	margin-top:25px;
+	position:absolute;
+	background:#484239;
+	border-top:10px solid #897e64;
+}
+
+.truck .hanging{
+	top:-75px;
+	z-index:-1;
+	width:70px;
+	left:-100px;
+	height:70px;
+	position:absolute;
+}
+.truck .hanging .rope{
+	width:1px;
+	bottom:8px;
+	margin:auto;
+	height:20px;
+	position:relative;
+	background:#d5e8ee;
+	-webkit-animation:hanging 10s linear infinite;
+	        animation:hanging 10s linear infinite;
+}
+.truck .hanging .rope:before,
+.truck .hanging .rope:after{
+	bottom:-5px;
+	height:1px;
+	width:36px;
+	background:#d5e8ee;
+}
+.truck .hanging .rope:before{left:-35px;-webkit-transform:rotate(-15deg);transform:rotate(-15deg)}
+.truck .hanging .rope:after{right:-35px;-webkit-transform:rotate(15deg);transform:rotate(15deg)}
+.truck .hanging a{
+	color:#395569;
+	display:block;
+	font-size:13px;
+	min-height:20px;
+	line-height:20px;
+	text-align:center;
+	text-decoration:none;
+}
+.truck .hanging a:hover{
+	background:#fff;
+}
+.truck .hanging .tbl{
+	width:100%;
+	display:table;
+	background:#adc1ca;
+	border-collapse:collapse;
+}
+.truck .hanging .tbl>.tbl-row,
+.truck .hanging .tbl>.tbl-row>.tbl-cell{
+	border:1px solid #d5e8ee;
+}
+.truck .hanging .tbl>.tbl-row{
+	display:table-row;
+}
+.truck .hanging .tbl>.tbl-row>.tbl-cell{
+	width:1%;
+	display:table-cell;
+}
+
+@-webkit-keyframes hanging{
+	0%{height:10px}
+	10%{height:10px}
+	50%{height:50px}
+	60%{height:50px}
+	100%{height:10px}
+}
+
+@keyframes hanging{
+	0%{height:10px}
+	10%{height:10px}
+	50%{height:50px}
+	60%{height:50px}
+	100%{height:10px}
+}
