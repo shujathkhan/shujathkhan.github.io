@@ -9,6 +9,17 @@ body{
 	color:#373737;
 	background:#b1cfd6;
 }
+#consfon{
+	position:absolute;
+	padding-top: 25px;
+	padding-left: 60%;
+    /*font-size: 25px;*/
+    font-style: italic;
+    flex-grow: inherit;
+    flex-basis: auto;
+    font-family: cursive;
+    color: ghostwhite;
+}
 *,:after,:before{box-sizing:border-box}
 .clearfix:after,.clearfix:before{content:'';display:table}
 .clearfix:after{clear:both;display:block}
@@ -626,6 +637,7 @@ body{
 	width:1%;
 	display:table-cell;
 }
+
 
 @-webkit-keyframes hanging{
 	0%{height:10px}
