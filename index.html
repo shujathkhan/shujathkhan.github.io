@@ -12,17 +12,101 @@
       <!--Import materialize.css-->
         <!-- Compiled and minified CSS -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+<link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/><!-- Compiled and minified CSS -->
 
       <!--Let browser know website is optimized for mobile-->
-</head>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Covered+By+Your+Grace);
+
+#days {
+  font-size: 50px;
+padding-left:455%;
+padding-top:80%;
+  color: #db4844;
+}
+#hours {
+  font-size: 45px;
+  color: #f07c22;
+padding-left:590%;
+margin-top: -70px;
+}
+#minutes {
+  font-size: 35px;
+  color: #f6da74;
+padding-left:730%;
+margin-top: -55px;
+}
+#seconds {
+  font-size: 30px;
+  color: #abcd58;
+padding-left:850%;
+margin-top: -48px;
+
+}
+#consfon{
+  position: absolute;
+        top: 0px; width: 100%;
+        padding: 5px;
+        margin:0px;
+        
+        text-align:center;
+      font-size:60px; 
+      padding-top: 30px;
+  font-family: 'Covered By Your Grace', cursive;
+  margin: 10px 50px; 
+ 
+color:white;
+}
+
+</style>
+	  </head>
 
 <body>
   <div class="sky">
-  	  <div id="consfon" class="flow-text col s6">
-  		We re currently updating our services, we'll be back soon!<br>Thank You :)
-
+  	  <div id="consfon" >
+  	COMING SOON
   </div>
 
+  <script>
+  function makeTimer() {
+
+			var endTime = new Date("January 1, 2018 00:00:00 GMT");			
+			var endTime = (Date.parse(endTime)) / 1000;
+
+			var now = new Date();
+			var now = (Date.parse(now) / 1000);
+
+			var timeLeft = endTime - now;
+
+			var days = Math.floor(timeLeft / 86400); 
+			var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+			var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+			var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+
+			if (hours < "10") { hours = "0" + hours; }
+			if (minutes < "10") { minutes = "0" + minutes; }
+			if (seconds < "10") { seconds = "0" + seconds; }
+
+			$("#days").html(days + "<span>Days</span>");
+			$("#hours").html(hours + "<span>Hours</span>");
+			$("#minutes").html(minutes + "<span>Minutes</span>");
+			$("#seconds").html(seconds + "<span>Seconds</span>");		
+
+	}
+
+	setInterval(function() { makeTimer(); }, 1000);
+  </script>
+<div id="timer" style="font-family: 'Covered By Your Grace', cursive; display: inline-block;
+ position:sticky;
+  
+  font-size: 40px;">
+  <div id="days"></div>
+  <div id="hours"></div>
+  <div id="minutes"></div>
+  <div id="seconds"></div>
+</div>
   </div>
 <div class="cloud big show-on-medium-and-up"><div></div></div>
 <div class="cloud small"><div></div></div>
@@ -85,6 +169,7 @@
   
        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <!-- Compiled and minified JavaScript -->
+
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 </body>
 </html>
