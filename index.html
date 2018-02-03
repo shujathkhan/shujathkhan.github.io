@@ -21,28 +21,28 @@
 @import url(https://fonts.googleapis.com/css?family=Covered+By+Your+Grace);
 
 #days {
-  font-size: 50px;
-padding-left:455%;
-padding-top:80%;
+  font-size: 35px;
+padding-left:830%;
+padding-top:210%;
   color: #db4844;
 }
 #hours {
-  font-size: 45px;
+  font-size: 30px;
   color: #f07c22;
-padding-left:590%;
-margin-top: -70px;
+padding-left:975%;
+margin-top: -48px;
 }
 #minutes {
-  font-size: 35px;
+  font-size: 25px;
   color: #f6da74;
-padding-left:730%;
-margin-top: -55px;
+padding-left:830%;
+margin-top: 10px;
 }
 #seconds {
-  font-size: 30px;
+  font-size: 20px;
   color: #abcd58;
-padding-left:850%;
-margin-top: -48px;
+padding-left:970%;
+margin-top: -30px;
 
 }
 #consfon{
@@ -59,6 +59,34 @@ margin-top: -48px;
  
 color:white;
 }
+#newcause{
+	position: absolute;
+        top: 0px; width: 100%;
+        padding: 5px;
+        margin:0px;
+        
+        text-align:center;
+      font-size:30px; 
+      padding-top: 100px;
+  font-family: 'Covered By Your Grace', cursive;
+  margin: 10px 115px; 
+ 
+color:white;
+}
+#newcause1{
+	position: absolute;
+        top: 0px; width: 100%;
+        padding: 5px;
+        margin:0px;
+        
+        text-align:center;
+      font-size:25px; 
+      padding-top: 130px;
+  font-family: 'Covered By Your Grace', cursive;
+  margin: 10px 55px; 
+ 
+color:white;
+}
 
 
 
@@ -68,13 +96,18 @@ color:white;
 <body>
   <div class="sky">
   	  <div id="consfon" >
-  	COMING SOON
+		COMING <span style="color:gold">SOON</span>
   </div>
-<!-- 
+	<div id="newcause" style="font-size:30px">
+			Won't be available till 1st of May, 2018!
+		</div>
+		<div id ="newcause1">
+				On an Internship with Infosys! :)	
+			</div>>
   <script>
   function makeTimer() {
 
-			var endTime = new Date("January 26, 2018 00:00:00 GMT");			
+			var endTime = new Date("May 1, 2018 00:00:00 GMT");			
 			var endTime = (Date.parse(endTime)) / 1000;
 
 			var now = new Date();
@@ -99,8 +132,8 @@ color:white;
 	}
 
 	setInterval(function() { makeTimer(); }, 1000);
-  </script> -->
-<!-- <div id="timer" style="font-family: 'Covered By Your Grace', cursive; display: inline-block;
+  </script>
+<div id="timer" style="font-family: 'Covered By Your Grace', cursive; display: inline-block;
  position:sticky;
   
   font-size: 40px;">
@@ -108,9 +141,7 @@ color:white;
   <div id="hours"></div>
   <div id="minutes"></div>
   <div id="seconds"></div>
-</div> -->
-
-
+</div>
   </div>
 <div class="cloud big show-on-medium-and-up"><div></div></div>
 <div class="cloud small"><div></div></div>
