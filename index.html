@@ -1,248 +1,1220 @@
 <!DOCTYPE html>
-<html lang="en" >
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shujath Khan</title>
-  <!-- <meta name="viewport" content="width=device-width,height=device-height"> -->
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Shujath Khan</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">
+   
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+   <style type="text/css" media="screen">
+
+   	#styles { 
+   		background: white;
+   		padding-top: 12rem;
+   		padding-bottom: 12rem;
+   	}
+   	#styles .row {
+   		max-width: 1024px;
+     	}
+     	#styles .section-intro {
+   		max-width: 800px;
+     	}
+
+ .css-typing #he1 #he5 {
+  border-right: .15em solid pink;
+
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.css-typing #he1 {
+  width: 7.3em;
+  -webkit-animation: type 2s steps(40, end);
+  animation: type 2s steps(40, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing #he5 {
+  width: 11.5em;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}  	
+
+   </style>       
+
+   <!-- script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
+
+   <!-- favicons
+	================================================== -->
    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
-    <!-- <script async src="https://cdn.ampproject.org/v0.js"></script> -->
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/textstyle.css">
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-        <!-- Compiled and minified CSS -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
-<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-<link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/><!-- Compiled and minified CSS -->
+</head>
 
-      <!--Let browser know website is optimized for mobile-->
-<style>
-@import url(https://fonts.googleapis.com/css?family=Covered+By+Your+Grace);
+<body id="top">
 
-#days {
-  font-size: 35px;
-padding-left:965%;
-padding-top:30%;
-  color: #db4844;
-}
-#hours {
-  font-size: 30px;
-  color: #f07c22;
-padding-left:1120%;
-margin-top: -48px;
-}
-#minutes {
-  font-size: 25px;
-  color: #f6da74;
-padding-left:965%;
-margin-top: 10px;
-}
-#seconds {
-  font-size: 20px;
-  color: #abcd58;
-padding-left:1120%;
-margin-top: -35px;
+	<!-- header 
+   ================================================== -->
+   <header>   	
+   	<div class="row">
 
-}
-#consfon{
-  position: absolute;
-        top: 0px; width: 100%;
-        
-        text-align:center;
-      font-size:60px; 
-      padding-top: 45px;
-  font-family: 'Covered By Your Grace', cursive;
-  
- 
-color:white;
-}
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
-}
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-}
-#newcause{
-	position: absolute;
-        top: 0px; width: 100%;
-        padding: 5px;
-        margin:0px;
-        
-        text-align:center;
-      font-size:30px; 
-      padding-top: 100px;
-  font-family: 'Covered By Your Grace', cursive;
-  margin: 10px 115px; 
- 
-color:black;
-}
-#newcause1{
-	position: absolute;
-        top: 0px; width: 100%;
-        padding: 5px;
-        margin:0px;
-        
-        text-align:center;
-      font-size:25px; 
-      padding-top: 130px;
-  font-family: 'Covered By Your Grace', cursive;
-  margin: 10px 55px; 
- 
-color:black;
-}
+   		<div class="top-bar">
+   			<a class="menu-toggle" href="#"><span>Menu</span></a>
 
-#mia{
-	color: black;
-    font: normal 40px Montserrat, sans-serif;
-    padding: 88px 400px;
-    position: absolute;
-}
+	   		<div class="logo">
+		         <a href="index.html">SKhan</a>
+		      </div>		      
 
-</style>
-	  </head>
+		   	<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li><a href="index.html#intro" title="">Home</a></li>
+						<li><a href="index.html#about" title="">About</a></li>
+						<li><a href="index.html#resume" title="">Resume</a></li>
+						<li><a href="index.html#portfolio" title="">Portfolio</a></li>
+						<li><a href="index.html#services" title="">Services</a></li>					
+						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>	
+					</ul>
+				</nav>    		
+   		</div> <!-- /top-bar --> 
+   		
+   	</div> <!-- /row --> 		
+   </header> <!-- /header -->
 
-<body>
-  <div class="sky">
-					<div id="consfon" class="col-8">
-						COMING <span style="color:gold">SOON</span>
-					</div>
-					<!-- <div id="mia" ><span style="color:gold">Hi</span>, This is Shujath!</div> -->
-						<!-- <div class="Iam">
-			
-							<br>
-							<p>I</p>
-							<b>
-							<div class="innerIam">
-									&#9829; to code! </br>
-								
-								develop exquisite stuff for the World!</br>
-								am a Tech-Aficionado and an Otaku. ;) 
-							</div>				
-							</b>
-						</div> -->
-  <script>
-  function makeTimer() {
+	<!-- intro section
+   ================================================== -->
+   <section id="intro">   
 
-			var endTime = new Date("July 1, 2018 00:00:00 GMT");			
-			var endTime = (Date.parse(endTime)) / 1000;
+   	<div class="intro-overlay"></div>	
 
-			var now = new Date();
-			var now = (Date.parse(now) / 1000);
+   	<div class="intro-content">
+   		<div class="row">
 
-			var timeLeft = endTime - now;
-
-			var days = Math.floor(timeLeft / 86400); 
-			var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
-			var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
-			var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
-
-			if (hours < "10") { hours = "0" + hours; }
-			if (minutes < "10") { minutes = "0" + minutes; }
-			if (seconds < "10") { seconds = "0" + seconds; }
-
-			$("#days").html(days + "<span>Days</span>");
-			$("#hours").html(hours + "<span>Hours</span>");
-			$("#minutes").html(minutes + "<span>Minutes</span>");
-			$("#seconds").html(seconds + "<span>Seconds</span>");		
-
-	}
-
-	setInterval(function() { makeTimer(); }, 1000);
-  </script>
-<!-- <div id="timer" style="font-family: 'Covered By Your Grace', cursive; display: inline-block;
- position:sticky;
-  
-  font-size: 40px;">
-  <div id="days"></div>
-  <div id="hours"></div>
-  <div id="minutes"></div>
-  <div id="seconds"></div>
-</div> -->
-  </div>
-<div class="cloud big show-on-medium-and-up"><div></div></div>
-<div class="cloud small"><div></div></div>
-<div class="truck">
-	<div class="body">
-		<div class="front">
-			<div class="roof"></div>
-			<div class="window"></div>
-		</div>
-		<div class="back">
-			<div class="stand"></div>
-			<div class="silencer"></div>
-		</div>
-		<div class="wheels"></div>
-		<div class="hydraulic"></div>
-		<div class="tool-box"></div>
-		<div class="main">
-			<div class="top-cog">
-				<div class="top-cog-a"></div>
-				<div class="top-cog-b"></div>
-				<div class="top-cog-c"></div>
-				<div class="hydraulic-piston"></div>
-				<div class="ropes">
-					<div class="rope rope-a"></div>
-					<div class="rope rope-b"></div>
-					<div class="rope rope-c"></div>
-					<div class="rope rope-d"></div>
-					<div class="rope rope-e"></div>
-					<div class="rope rope-f"></div>
-					<div class="rope rope-g"></div>
-				</div>
-			</div>
-			<div class="box">
-				<div class="window"></div>
-			</div>
-		</div>
-		<div class="hanging">
-			<div class="rope"></div>
-
-
-				<div class="tbl">
-				<a href="backup-portfolio/index.html" style="font-size: 10px;line-height: 10px"><b>VISIT BACKUP PORTFOLIO</b></a>
-
-				</div>
-			<div class="tbl">
-				<div class="tbl-row">
-					<div class="tbl-cell"><a href="https://www.facebook.com/shujath.live" target="_blank"><i class="fa fa-facebook"></i></a></div>
-					<div class="tbl-cell"><a href="https://twitter.com/khan_shujath" target="_blank"><i class="fa fa-twitter"></i></a></div>
-					<div class="tbl-cell"><a href="https://codepen.io/shujathlive" target="_blank"><i class="fa fa-codepen"></i></a></div>
-				</div>
-				<div class="tbl-row">
-					<div class="tbl-cell"><a href="https://linkedin.com/in/shujath-khan" target="_blank"><i class="fa fa-linkedin"></i></a></div>
-					<div class="tbl-cell"><a href="https://www.instagram.com/shujath_khan/" target="_blank"><i class="fa fa-instagram"></i></a></div>
-					<div class="tbl-cell"><a href="https://www.hackerrank.com/Xukah" target="_blank"><i class="fa fa-code"></i></a></div>
-				</div>
-				<div class="tbl-row">
-					<div class="tbl-cell"><a href="resume-shujath.pdf" download><i class="fa fa-download"></i></a></div>
-					<div class="tbl-cell"><a href="https://github.com/Shujathlive" target="_blank"><i class="fa fa-github"></i></a></div>
-					<div class="tbl-cell"><a href="mailto:shujathlive@gmail.com"><i class="fa fa-at"></i></a></div>
-				</div>
-			</div>
-		</div>
-	</div>
+   			<div class="col-twelve">
+<div class="css-typing">
+	   			<h5 id="he1">Hello, World.</h5>
+	   			<h1 id="he5">I'm Shujath Khan.</h1>
 </div>
-<div class="ground"></div>
-  
-       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <!-- Compiled and minified JavaScript -->
+	   			<p class="intro-position">
+	   				<span>Software Developer</span>
+	   				<span>Researcher</span> 
+	   				<span>IoT Product Developer</span> 
+	   				<span>Graphic Designer</span> 
+	   			</p>
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+
+	   		</div>  
+   			
+   		</div>   		 		
+   	</div> <!-- /intro-content --> 
+
+   	<ul class="intro-social">        
+   					<li><a href="https://www.facebook.com/shujath.live" target="_blank"><i class="fa fa-facebook"></i></a></li>
+			      <li><a href="https://twitter.com/khan_shujath" target="_blank"><i class="fa fa-twitter"></i></a></li>
+			      <li><a href="https://linkedin.com/in/shujath-khan" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+			      <li><a href="https://www.instagram.com/shujath_khan/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+			      <li><a href="mailto:shujathlive@gmail.com"><i class="fa fa-at"></i></a></li>
+			      <li><a href="https://codepen.io/shujathlive" target="_blank"><i class="fa fa-codepen"></i></a></li>
+			      <li><a href="https://www.hackerrank.com/Xukah" target="_blank"><i class="fa fa-code"></i></a></li>
+			      <li><a href="https://github.com/shujathkhan" target="_blank"><i class="fa fa-github"></i></a></li>
+      </ul> <!-- /intro-social -->      	
+
+   </section> <!-- /intro -->
+
+
+   <!-- about section
+   ================================================== -->
+   <section id="about">  
+
+   	<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>About</h5>
+   			<h1>Let me introduce myself.</h1>
+
+   			<div class="intro-info">
+
+   				<img src="images/dp.jpg" alt="Profile Picture">
+
+   				<p class="lead">I'm a passionate developer who thrives on learning and implementing latest technologies for the development of this World!. 
+I Believe that there's nothing that can not be achieved, all it takes is an Ambition, Dedication and Hard work, and I hope to provide it all to your firm.
+</p>
+   			</div>   			
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row about-content">
+
+
+   			<h3>Profile</h3>
+   			<p>Before we move ahead, here are a few details about me. </p>
+
+   			<ul class="info-list">
+   				<li>
+   					<strong>Fullname:</strong>
+   					<span>Shujaatullah Khan</span>
+   				</li>
+   				<li>
+   					<strong>Birth Date:</strong>
+   					<span>October 10, 1995</span>
+   				</li>
+   				<li>
+   					<strong>Job:</strong>
+   					<span>Freelancer, Software Developer</span>
+   				</li>
+   				<li>
+   					<strong>Website:</strong>
+   					<span>www.shujathkhan.github.io</span>
+   				</li>
+   				<li>
+   					<strong>Email:</strong>
+   					<span>shujathkhan@live.com</span>
+   				</li>
+
+   			</ul> <!-- /info-list -->
+
+
+   	</div>
+   	<div class="row about-content">
+
+   			<h3>Skills</h3>
+   			<p>Well, I am still learning and fulfilling my tech-thirst, so coming up next are some of the skills I currently possess.</p>
+
+   		<div class="col-six tab-full">
+
+				<ul class="skill-bars">
+				   <li>
+				   	<div class="progress percent95"><span>95%</span></div>
+				   	<strong>HTML5</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent85"><span>85%</span></div>
+				   	<strong>CSS3</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent80"><span>80%</span></div>
+				   	<strong>IoT and Android Things</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent65"><span>65%</span></div>
+				   	<strong>Android</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent70"><span>70%</span></div>
+				   	<strong>Data Structures</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent90"><span>90%</span></div>
+				   	<strong>RDBMS</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent70"><span>70%</span></div>
+				   	<strong>Adobe PS, SketchPad</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent75"><span>75%</span></div>
+				   	<strong>Operating Systems</strong>
+				   	<small>Linux(Ubuntu, Mint, Kali, Contiki, Arch), Windows10, MAC OSX</small>
+				   </li>
+				</ul>
+		</div>				
+   		<div class="col-six tab-full">
+   				<ul class="skill-bars">
+				   
+				   <li>
+				   	<div class="progress percent85"><span>85%</span></div>
+				   	<strong>JS, JQuery & Ajax</strong>
+				   	<small>FlipJS, ThreeJS, Aframe, TurnJS, NodeJS, TrackingJS</small>
+				   </li>
+				   <li>
+				   	<div class="progress percent70"><span>70%</span></div>
+				   	<strong>Cross-Platform:</strong>
+				   	<small>MeteorJS, ReactJS, VueJS</small>
+				   </li>
+				   <li>
+				   	<div class="progress percent75"><span>75%</span></div>
+				   	<strong>Servers:</strong>
+				   	<small>NginX, Apache, Glassfish</small>
+				   </li>
+				   <li>
+				   	<div class="progress percent70"><span>70%</span></div>
+				   	<strong>Python2/3</strong>
+				   	<small>OpenCV, TensorFlow, Keras, ML and DL</small>
+				   </li>
+				   <li>
+				   	<div class="progress percent85"><span>85%</span></div>
+				   	<strong>DevOps, Version control</strong>
+				   	<small>Kubernetes, Docker, Git, GitLab, GitHub</small>
+				   </li>
+				   <li>
+				   	<div class="progress percent75"><span>75%</span></div>
+				   	<strong>C, C++ and Java</strong>
+				   	<small>J2EE, Jython</small>
+				   </li>
+				   <li>
+				   	<div class="progress percent70"><span>70%</span></div>
+				   	<strong>NoSQL:</strong>
+				   	<small>MongoDB, Redis, Django, Firebase</small/>
+				   </li>
+				   <li>
+				   	<div class="progress percent75"><span>75%</span></div>
+				   	<strong>WordPress and Others*</strong>
+				   	<small>*Jekyll, Anaconda, Unity, TinkerCAD, Fritzing, Networking using OPNET</small>
+				   </li>
+      
+				</ul> <!-- /skill-bars -->		
+
+   		</div>
+
+   	</div>
+
+   	<div class="row button-section">
+   		<div class="col-twelve">
+   			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
+   			<a href="resume-shujath.pdf" title="Download CV" class="button button-primary" download>Download Resume</a>
+   		</div>   		
+   	</div>
+
+   </section> <!-- /process-->    
+
+
+   <!-- resume Section
+   ================================================== -->
+	<section id="resume" class="grey-section">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Resume</h5>
+   			<h1>More of my credentials.</h1>
+
+   			<p class="lead">Want to know more about me? Up next, check out my Edu background and my work experience. </p>
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Work Experience</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+						<div class="timeline-block">
+
+								<div class="timeline-ico">
+									<i class="fa fa-graduation-cap"></i>
+								</div>
+	 
+								<div class="timeline-header">
+									<h3>Systems Engineer(Researcher)</h3>
+									<p>July 2018 - Present</p>
+								</div>
+	 
+								<div class="timeline-content">
+									<h4>Infosys</h4>
+									<p>Part of a Research and Innovation Team at Infosys. Our work mostly deals with high level programming in the field of AI and VR.
+											Worked on versatile techniques and applications of computer vision and deep learning like,
+											<ul>
+													<li>Hand tracking</li>
+											<li>Hand gesture recognition</li>
+											<li>Facial recognition</li>
+											<li>Face detection</li>
+											<li>Object tracking</li>
+											<li>Eye tracking</li>
+											<li>Object recognition</li>
+											<li>Posture recognition</li>
+											<li>Game control using hand tracking</li>
+											<li>Music control using Emotion recognition</li>
+										</ul>
+										</p>
+								</div>
+	 
+							</div> <!-- /timeline-block -->
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Intern</h3>
+	   					<p>January 2018 - May 2018</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Infosys</h4>
+	   					<p>I am curretly pursuing my SDET Internship program at Infosys. The duration of the program is 4 months. I hear the training/Internship here is Intense, from competitive coding to advanced Software Product Development. Let's hope to ace it! ;)</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+				
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Advisor</h3>
+	   					<p>May 2018 - Present</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Think-Digital</h4>
+	   					<p>This is a startup organization specializing in Information Technology and Services. My role was basically focussed on mentoring and guiding young developers, and orienting the organization towards a technologically advanced company. Being in the organizationm, I also conducted workshops on IoT as an Intro and pursuing it as an advanced career.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+				
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Technical Mentor</h3>
+	   					<p>February 2017 - May 2018</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Google Developer Student Club(DSC), SRM University</h4>
+	   					<p>Developer Student Clubs (DSC) is a Google Developers program for university students to learn mobile and web development skills. My role ws to mentor the technical team of DSC. We worked on Android Studio and Web Development using AMP nd PWA.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+				
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Full Stack Developer</h3>
+	   					<p>June 2016 - December 2016</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Think-Digital</h4>
+	   					<p>This is a startup organization specializing in Information Technology and Services. I worked on Full stack products, in the field of IoT, Mobile App And Web Technologies. I enhanced and upgraded my skills to fit for my role in period of 6 months, by lerning various frontend and backend technologies like JavaScript, CSS3, HTML5, React JS, RDBMS, NoSQL and various IoT Technologies.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+				
+				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Graphic Designer</h3>
+	   					<p>July 2015 - June 2016</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Think-Digital</h4>
+	   					<p>This is a startup organization specializing in Information Technology and Services. I worked as a Graphic Designer as a major role, but I worked as a developer in various other domains like IoT, Web, Mobile App and R&D.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Full stack Developer</h3>
+	   					<p>October 2016 - January 2018</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>University Learning Center, SRM University</h4>
+	   					<p>I worked with a team of Software develpersto develop smart and innovative teaching environments tat help in enhancing the university's learning approach. We worked on projects like e-Learn and e-Services(A Certification process automation tool).</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Summer Intern</h3>
+	   					<p>June 2016 - July 2016</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Internet of Things Alliance</h4>
+	   					<p>It was a project based internship, in which I worked onmy Autonomous Smart Waste Collection System using Internet of Things.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+   	
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Education</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Bachelor's Degree</h3>
+	   					<p>July 2014 - Present</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>8.7GPA, SRM University</h4>
+	   					<p>I completed my Bachelor's degree at SRM University, a great place for Multi-National people to interact, and grow in terms of every aspect of your life. It doesn't matter which course you select to major in, at the end of the programme , you'll eventually come out as a successful visionary. </p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+		
+	</section> <!-- /features -->
+
+
+	<!-- Portfolio Section
+   ================================================== -->
+	<section id="portfolio">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Portfolio</h5>
+   			<h1>Check Out Some of My Works.</h1>
+
+   			<p class="lead">For most of the eyes out there who need a fool-proof record, I have enlisted some of my works below.</p>
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row portfolio-content">
+
+   		<div class="col-twelve">
+
+   			<!-- portfolio-wrapper -->
+	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+
+	         	<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/2k17.jpg" alt="2k17">
+	                  <a href="#modal-01" class="overlay">	                  	           
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+		     					       <h3 class="folio-title">Posters and Resumes</h3>	     					    
+		     					    	 <span class="folio-types">
+		     					       	  Graphic Design
+		     					       </span>
+		     					   </div>	                      	
+	                     </div>                    
+	                  </a>
+	               </div>	               
+	        		</div> <!-- /folio-item -->
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/emo.jpg" alt="Emo">
+	               	<a href="#modal-02" class="overlay">              		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Music Playback using Emotions</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Software Development
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/quiz.png" alt="quiz">
+	                  <a href="#modal-06" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">E-Quiz</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	 Web Development
+		     					      </span>		     		
+		     					   </div>	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->   
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/pasted image 0.png" alt="Beetle">
+	                  <a href="#modal-04" class="overlay">                  	                 
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">ALMS</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Web Development
+		     					      </span>		     		
+		     					   </div>  	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->     
+
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/chat.jpg" alt="Clouds">
+	                  <a href="#modal-03" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">FlakeIT</h3>	     					    
+		     					    	<span class="folio-types">
+		     					Mobile App Development
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        	</div> <!-- /folio-item -->
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/smart-dustbin.jpg" alt="smartdustbin">
+	                  <a href="#modal-05" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">ASWCS (Smart Dustbin)</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Intenet of Things
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	      
+
+
+	            <!-- modal popups - begin
+	            ============================================================= -->
+	            <div id="modal-01" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/2k17.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Posters</h4>		      
+					      <p>Be it New Year Posters or Promotional, bringing yours thoughts to life. A few of my works,
+					      	<br>
+
+					      <ul>
+					      	<li><a href="https://goo.gl/7g3fSb"> Design-1</a></li>
+					      	<li><a href="https://goo.gl/FxvX9Z"> Design-2</a></li>
+					      </ul>
+					      
+					      	Google DSC Designs
+					      	<ul>
+					      	<li><a href="https://drive.google.com/open?id=0B5R7Bb9qIEwRNzJaMUZ3RUZCeG8"> Doodle Poster</a></li>
+					      	<li><a href="https://drive.google.com/open?id=0B5R7Bb9qIEwRYzI4SUF0YzVOdTg"> Panoramio Poster</a></li>
+					      	<li><a href="https://drive.google.com/open?id=0B5R7Bb9qIEwRZnBkT0VycjJfV0k"> Coming Soon Poster</a></li>
+					      	<li><a href="https://drive.google.com/open?id=0B5R7Bb9qIEwRYlNVMmVfa1BPMHc"> Webinar Poster</a></li>
+					      	<li><a href="https://drive.google.com/open?id=0B5R7Bb9qIEwRYWxmR0Q0TEVEX1k"> Logo Design</a></li>
+					      	</ul>
+					      </p>
+					      </div>
+
+
+			         <div class="link-box">
+		
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-01 -->
+
+				   <div id="modal-02" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/emotions.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Music Playbaack using Emotions</h4>		      
+					      <p>Emotions are reflected from speech, hand and gestures of the body and through facial expressions. Hence extracting and understanding of emotion has a high importance of the interaction between human and machine communication. Hence, this project basically focuses on predicting human emotions using facial recognition.</p>
+
+					      <div class="categories">Machine Learning and IoT</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://github.com/shujathkhan/Emotion-Recognition">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-02 -->
+
+				   <div id="modal-03" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/images.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>FlakeIT</h4>		      
+					      <p>A robust chat application that's compatible with web and mobile, on all platforms using iOS, Android and Windows. It uses MeteorJS to make itself extendable.
+</p>
+
+					      <div class="categories">MetorJS</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://github.com/shujathkhan/FlakeIT">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-03 -->
+
+				   <div id="modal-04" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/alms.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Automated Learning Management System</h4>		      
+					      <p>An Automated Learning Management System, that uses a DMS to manage document nd course content. It also incorporates a discussion forum for efficient interaction between students and instructors.</p>
+
+					      <div class="categories">UI/UX Design, Web Development</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://github.com/shujathkhan/ALMS">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-04 -->
+
+				   <div id="modal-05" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/board.jpg" alt="awcs" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Autonomous Smart Waste Collection System</h4>		      
+					      <p>Smart Dustbin is an Innovative, Life-changing project which will help in making the environment pollution free. This Smart dustbin project moves on its own when called and collects the trash, thus improving the workflow, but not only that, it’s smart too, as it sends an SMS to the workers to come and collect the trash, also works on completely wireless backup power. Thus, making it a more smart and efficient </p>
+
+					      <div class="categories">Internet of Things</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://github.com/shujathkhan/ASWCS">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-05 -->
+
+				   <div id="modal-06" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/quiz.jpg" alt="quiz" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>E-Quiz</h4>		      
+					      <p>A Quiz module created for the benefit of Students using ALMS, it consists of MCQ, Fill in the Blanks, Code Matchup, Code Rearrange, Short and Long answers.</p>
+
+					      <div class="categories">UI/UX Design, Web Development</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://github.com/shujathkhan/E-Quiz">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-06 -->
+
+
+				   <!-- modal popups - end
+	            ============================================================= -->
+
+	         </div> <!-- /portfolio-wrapper --> 
+
+   		</div>  <!-- /twelve -->   
+
+   	</div> <!-- /portfolio-content --> 
+		
+	</section> <!-- /portfolio --> 
+
+
+
+	
+	<!-- services Section
+   ================================================== -->
+	<section id="services">
+
+		<div class="overlay"></div>
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Services</h5>
+   			<h1>What Can I Do For You?</h1>
+
+   			<p class="lead">I'm experienced in the fields mentioned below and more than glad to work with the companies who wish to work with me as well. Here you go, some of the services I offer to my clients:</p>
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row services-content">
+
+   		<div id="owl-slider" class="owl-carousel services-list">
+
+	      	<div class="service">	
+
+	      		<span class="icon"><i class="icon-earth"></i></span>            
+
+	            <div class="service-content">	
+
+	            	 <h3>UI/UX Design</h3>
+		            <p class="desc">The features you intend to include on your website solely depend on the interface you offer to your users. I promise you to bring home a fusion of comfortable interface and contemporary touch to highlight the best of features that your site is equipped with.
+	         		</p>
+	         		
+	         	</div> 	         	 
+
+				</div> <!-- /service -->
+	
+				<div class="service">	
+
+	      		<span class="icon"><i class="icon-earth"></i></span>            
+
+	            <div class="service-content">	
+
+	            	 <h3>IoT Products</h3>
+		            <p class="desc">The world is obsessed with Internet of Things (IoT) and the products this cutting edge technology has bred completely revolutionalizes the way we see things today. Kick-start your journey with IoT now by hiring me!
+	         		</p>
+	         		
+	         	</div> 	         	 
+
+				</div> <!-- /service --><div class="service">	
+
+	      		<span class="icon"><i class="icon-earth"></i></span>            
+
+	            <div class="service-content">	
+
+	            	 <h3>Software development</h3>
+		            <p class="desc">What one looks for is a software that could change the world for real. Help me help you to develop such a software with the superiority that the end-users need to realize their goals.
+	         		</p>
+	         		
+	         	</div> 	         	 
+
+				</div> <!-- /service -->
+				
+				
+
+				<div class="service">	
+
+					<span class="icon"><i class="icon-window"></i></span>                          
+
+	            <div class="service-content">	
+
+	            	<h3>Web Development</h3>  
+
+		            <p class="desc">With a powerful front end comes a supportive back end to pave way for a successful website. Direct the website as you wish it to be and make it rich in features. I can help you in achieving such a website throughout the development process. 
+	         		</p>
+
+	            </div>	                          
+
+			   </div> <!-- /service -->
+
+			   <div class="service">
+
+			   	<span class="icon"><i class="icon-image"></i></span>	            
+
+	            <div class="service-content">
+
+	            	<h3>Graphics Design</h3>
+
+		            <p class="desc">Every business needs a brand. Wondering what difference does it make? Well, from enterprise logos to flyovers and designing merchandise, I can assist you in all of these endeavors. What's guaranteed is a design that magically meets your firm's standards and expectations.
+	        			</p> 
+
+	            </div>	               
+
+			   </div> <!-- /service -->
+
+			   <div class="service">
+
+			   	<span class="icon"><i class="icon-chat"></i></span>	   	           
+
+	            <div class="service-content">
+
+	            	 <h3>Consultancy</h3>
+
+		            <p class="desc">Being professional is everything these days. You are promised for the quality you deserve. Thus, delivering professional products professionally is my mission as a successful developer in addition to contributing significant ideas to enhance the product life.
+	        			</p> 
+	        			
+	            </div>	               
+
+			   </div> <!-- /service -->
+
+	      </div> <!-- /services-list -->
+   		
+   	</div> <!-- /services-content -->
+		
+	</section> <!-- /services -->	
+
+
+	<!-- stats Section
+   ================================================== -->
+	<section id="stats" class="count-up">
+
+		<div class="row">
+			<div class="col-twelve">
+
+				<div class="block-1-4 block-s-1-2 block-tab-1-2 block-mob-full stats-list">
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-pencil-ruler"></i>
+						</div>
+
+						<h3 class="stat-count">
+							12
+						</h3>
+
+						<h5 class="stat-title">
+							Projects Completed
+						</h5>
+
+					</div> <!-- /stat -->					
+
+		
+								
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-light-bulb"></i>
+						</div>
+
+						<h3 class="stat-count">
+							56
+						</h3>
+
+						<h5 class="stat-title">
+							Crazy Ideas
+						</h5>
+
+					</div> <!-- /stat -->
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-cup"></i>
+						</div>
+
+						<h3 class="stat-count">
+							15830
+						</h3>
+
+						<h5 class="stat-title">
+							Coffee Cups
+						</h5>
+
+					</div> <!-- /stat -->
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-clock"></i>
+						</div>
+
+						<h3 class="stat-count">
+							17280
+						</h3>
+
+						<h5 class="stat-title">
+							Hours
+						</h5>
+
+					</div> <!-- /stat -->
+
+				</div> <!-- /stats-list -->
+
+			</div> <!-- /twelve -->
+		</div> <!-- /row -->
+
+	</section> <!-- /stats -->
+
+	
+   <!-- contact
+   ================================================== -->
+	<section id="contact">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Contact</h5>
+   			<h1>I'd Love To Hear From You.</h1>
+
+   			<p class="lead">I stand by my words and I'm all ears. Your feedbacks are my top-most priority in order to improve in what I think I can master in. So do feel free to walk by.</p>
+
+   		</div> 
+   	</div> <!-- /section-intro -->
+
+   
+
+   	<div class="row contact-info">
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-pin"></i>
+   			</div>
+
+   			<h5>Where to find me</h5>
+
+   			<p>
+            #15, 71/B<br>
+            Anna Nagar, Hosur<br>
+            Tamil Nadu, India
+            </p>
+
+   		</div>
+
+   		<div class="col-four tab-full collapse">
+
+   			<div class="icon">
+   				<i class="icon-mail"></i>
+   			</div>
+
+   			<h5>Email Me At</h5>
+
+   			<p>shujathkhan@live.com<br>
+   				shujathlive@gmail.com
+			   		     
+			   </p>
+
+   		</div>
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-phone"></i>
+   			</div>
+
+   			<h5>Call Me At</h5>
+
+   			<p>Mobile: (+91) 82 48 219416<br>
+			   	
+			   </p>
+
+   		</div>
+   		
+   	</div> <!-- /contact-info -->
+		
+	</section> <!-- /contact -->
+
+   <!-- footer
+   ================================================== -->
+
+   <footer>
+     	<div class="row">
+
+     		<div class="col-six tab-full pull-right social">
+
+     			<ul class="footer-social">
+			      <li><a href="https://www.facebook.com/shujath.live" target="_blank"><i class="fa fa-facebook"></i></a></li>
+			      <li><a href="https://twitter.com/khan_shujath" target="_blank"><i class="fa fa-twitter"></i></a></li>
+			      <li><a href="https://linkedin.com/in/shujath-khan" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+			      <li><a href="https://www.instagram.com/shujath_khan/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+			      <li><a href="mailto:shujathlive@gmail.com"><i class="fa fa-at"></i></a></li>
+			      <li><a href="https://codepen.io/shujathlive" target="_blank"><i class="fa fa-codepen"></i></a></li>
+			      <li><a href="https://www.hackerrank.com/Xukah" target="_blank"><i class="fa fa-code"></i></a></li>
+			      <li><a href="https://github.com/shujathkhan" target="_blank"><i class="fa fa-github"></i></a></li>
+			   </ul> 
+	      		
+	      </div>
+
+      	<div class="col-six tab-full">
+	      	<div class="copyright">
+		        	<span>© Copyright 2017.</span> 
+		        	<span>Design by <a href="http://shujathkhan.github.io">Shujath Khan</a></span>	         	
+		         </div>		                  
+	      	</div>
+
+	      	<div id="go-top">
+		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+		      </div>
+
+      	</div> <!-- /row -->     	
+   </footer>  
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
 </body>
+
 </html>
