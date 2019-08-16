@@ -1,0 +1,27 @@
+.circle-out {
+    border-radius: 70%;
+    height: 3vh;
+    width: 1.5vw;
+    border: 2px rgb(0, 0, 0) solid;
+    
+    position: relative;
+    padding: 1%;
+    /* animation: grow .8s infinite; */
+  }
+.circle-in {
+border-radius: 50%;
+background: rgb(0, 0, 0);
+height: 1vh;
+width: 0.5vw;
+margin: 0.5rem auto;
+}
+/* @keyframes grow {
+0%, 100% {
+    border: 2px solid #D81159;
+    background:rgba(159, 255, 245, 0.2);
+}
+50% {
+    border: 8px solid #D81159;
+    background: rgba(159, 255, 245, 1);
+}
+} */
