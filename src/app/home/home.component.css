@@ -3,13 +3,17 @@ section{
     height:auto;
 }
 .Intro{
-    width:50vw;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 40vh;
+    left: 30vw;
 }
 .iam{
-    font-size:4rem;
+    font-size:6vh;
 }
  .reflectIam{
-    font-size:4rem
+    font-size:6vh;
  }
 
  /************************************* MENU CARDS *********************************************/
@@ -117,11 +121,12 @@ section{
  
  
  .grid {
-     width: 100%;
-     max-width: 1440px;
-     margin: 0 auto;
+     width: 80%;
+     max-width: 100vw;
+     margin: 0 5%;
      padding-bottom: 10rem;
      grid-row-gap:3rem;
+     padding-top: 5rem;
      grid-column-gap:4rem;
  }
  
@@ -150,7 +155,7 @@ section{
      position: relative;
      font-weight: normal;
      text-transform: uppercase;
-     font-size: 3.15rem;
+     font-size: 5vh;
      letter-spacing: 0.15rem;
      line-height: 1.25;
      font-family: 'Anton', sans-serif;
@@ -193,7 +198,7 @@ section{
      font-weight: normal;
      text-transform: uppercase;
      letter-spacing: 0.15rem;
-     font-size: 1.75rem;
+     font-size: 3vh;
      margin: 0.5rem 1rem;
      font-family: 'Anton', sans-serif;
  }
@@ -201,7 +206,7 @@ section{
  .box__text-inner {
      position: relative;
      display: block;
-     border: 6px solid black;
+     border: 1vh solid black;
      padding: 0.25rem 1.25rem;
  }
  
@@ -349,8 +354,8 @@ section{
          margin: 4rem;
      }
      .box__title {
-         top: -4rem;
-         right: -4.5rem;
+         top: -4vh;
+         right: -3vw;
          -webkit-writing-mode: vertical-rl;
          writing-mode: vertical-rl;
          height:35vh;
@@ -368,7 +373,7 @@ section{
          top: auto;
      }
      .box__title--left {
-         left: -5rem;
+         left: -4vw;
          z-index:2;
          right: auto;
          top:0rem;
@@ -454,4 +459,6 @@ section{
      }
  
  }
- 
+ .social-icons{
+    flex-direction: row ;
+ }

@@ -38,11 +38,11 @@ export class TextScramble {
           complete++
           output += to
         } else if (this.frame >= start) {
-          if (!char || Math.random() < 0.28) {
+          if (!char || Math.random() < 0.25) {
             char = this.randomChar()
             this.queue[i].char = char
           }
-          output += `<span class="dud">${char}</span>`
+          output += `<span class="dud" style="color:#808080">${char}</span>`
         } else {
           output += from
         }

@@ -15,6 +15,12 @@ height: 1vh;
 width: 0.5vw;
 margin: 0.5rem auto;
 }
+
+@media screen and (orientation:portrait){
+  .circle-in, .circle-out{
+    display: none;
+  }
+}
 /* @keyframes grow {
 0%, 100% {
     border: 2px solid #D81159;

@@ -48,7 +48,7 @@ export class HomeComponent implements OnInit {
     },2000)
     this.loadScript('../assets/js/imagesloaded.pkgd.min.js');
     this.loadScript('../assets/js/TweenMax.min.js');
-    this.loadScript('../assets/js/demo.js');
+    this.loadScript('../assets/js/menugrid.js');
     
   }
 

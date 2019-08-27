@@ -1,6 +1,12 @@
 <section class="sec1" >
     <mat-grid-list cols="1" rowHeight="100vh">
-            <mat-grid-tile>
+            <!-- <mat-grid-tile rowspan="1"  colspan="1" >
+                    <i class="fa fa-github fa-2x icon-3d"></i>
+                    <i class="fa fa-gitlab fa-2x icon-3d"></i>
+                    <i class="fa fa-bitbucket fa-2x icon-3d"></i>
+                    <i class="fa fa-git fa-2x icon-3d"></i>
+            </mat-grid-tile> -->
+            <mat-grid-tile rowspan="1" colspan="1">
                 <div class="Intro">
                     <div class="iam">Hi there!</div>
                     <div class="reflectIam">I'm a <span  class="text"></span></div>
@@ -10,10 +16,10 @@
 </section>
 <section class="sec1">
     <div class="grid">
-        <a class="grid__item" href="#preview-1">
-            <div class="box">
+        <a class="grid__item" routerLink="/projects">
+            <div class="box" >
                 <div class="box__shadow"></div>
-                <img class="box__img" src="../assets/img/1.gif" alt="Some image"/>
+                <img class="box__img" src="../assets/img/1.gif" alt="Some image" routerLink="/projects"/>
                 <h3 class="box__title"><span class="box__title-inner" data-hover="TECHIE">TECHIE</span></h3>
                 <h4 class="box__text"><span class="box__text-inner box__text-inner--rotated3">PROJECTS</span></h4>
                 <div class="box__deco">&hearts;</div>
@@ -40,8 +46,8 @@
             </div>
         </a>
     
-        <a class="grid__item" href="#preview-4">
-            <div class="box" routerLink="/work">
+        <a class="grid__item" routerLink="/work">
+            <div class="box" >
                 <div class="box__shadow"></div>
                 <img class="box__img" src="../assets/img/4.gif" alt="Some image"/>
                 <h3 class="box__title box__title--left"><span class="box__title-inner" data-hover="I WORK!">I WORK!</span></h3>

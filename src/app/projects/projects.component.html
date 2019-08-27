@@ -1,0 +1,35 @@
+<section>
+<div>
+       
+                <div class="SecTitle">
+                    Projects                   
+                </div>
+                 <br>
+                <div class="SecDesc">
+                        Self-Taught | Creative | Inspired                  
+                        <br/>
+                        The recipes I have prepared and perfected over the years!
+                </div>
+                <div id="testit"></div> 
+       
+   
+    </div>
+</section>
+<section>
+    <div class="SkillsTitle">
+        SKILLS
+    </div>
+    <div class="skillsContent">
+        <div  *ngFor="let img of URLS">
+                
+            <img [src]="img" style="width: 3rem;height: 3rem;object-fit: cover;"/>
+            
+        </div>
+        <div>
+                <img src="https://logo.clearbit.com/mongodb.org"/>
+        </div>
+        <div>
+                <img src="https://logo.clearbit.com/expressjs.com" style="height: 1.95rem;"/>
+        </div>
+    </div>
+</section>

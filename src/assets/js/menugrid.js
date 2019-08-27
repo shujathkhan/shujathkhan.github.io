@@ -175,89 +175,89 @@
         }
     }
 
-    class Overlay {
-        constructor() {
-            this.DOM = {el: document.querySelector('.overlay')};
-            this.DOM.reveal = this.DOM.el.querySelector('.overlay__reveal');
-            this.DOM.items = this.DOM.el.querySelectorAll('.overlay__item');
-            this.DOM.close = this.DOM.el.querySelector('.overlay__close');
-        }
-        show(contentItem) {
-            this.contentItem = contentItem;
-            this.DOM.el.classList.add('overlay--open');
-            // show revealer
-            TweenMax.to(this.DOM.reveal, .5, {
-                ease: 'Power1.easeInOut',
-                x: '0%',
-                onComplete: () => {
-                    // hide scroll
-                    document.body.classList.add('preview-open');
-                    // show preview
-                    this.revealItem(contentItem);
-                    // hide revealer
-                    TweenMax.to(this.DOM.reveal, .5, {
-                        delay: 0.2,
-                        ease: 'Power3.easeOut',
-                        x: '-100%'
-                    });
+    // class Overlay {
+    //     constructor() {
+    //         this.DOM = {el: document.querySelector('.overlay')};
+    //         this.DOM.reveal = this.DOM.el.querySelector('.overlay__reveal');
+    //         this.DOM.items = this.DOM.el.querySelectorAll('.overlay__item');
+    //         this.DOM.close = this.DOM.el.querySelector('.overlay__close');
+    //     }
+    //     show(contentItem) {
+    //         this.contentItem = contentItem;
+    //         this.DOM.el.classList.add('overlay--open');
+    //         // show revealer
+    //         TweenMax.to(this.DOM.reveal, .5, {
+    //             ease: 'Power1.easeInOut',
+    //             x: '0%',
+    //             onComplete: () => {
+    //                 // hide scroll
+    //                 document.body.classList.add('preview-open');
+    //                 // show preview
+    //                 this.revealItem(contentItem);
+    //                 // hide revealer
+    //                 TweenMax.to(this.DOM.reveal, .5, {
+    //                     delay: 0.2,
+    //                     ease: 'Power3.easeOut',
+    //                     x: '-100%'
+    //                 });
 
-                    this.DOM.close.style.opacity = 1;
-                }
-            });
-        }
-        revealItem() {
-            this.contentItem.style.opacity = 1;
+    //                 this.DOM.close.style.opacity = 1;
+    //             }
+    //         });
+    //     }
+    //     revealItem() {
+    //         this.contentItem.style.opacity = 1;
 
-            let itemElems = [];
-            itemElems.push(this.contentItem.querySelector('.box__shadow'));
-            itemElems.push(this.contentItem.querySelector('.box__img'));
-            itemElems.push(this.contentItem.querySelector('.box__title'));
-            itemElems.push(this.contentItem.querySelector('.box__text'));
-            itemElems.push(this.contentItem.querySelector('.box__deco'));
-            itemElems.push(this.contentItem.querySelector('.overlay__content'));
+    //         let itemElems = [];
+    //         itemElems.push(this.contentItem.querySelector('.box__shadow'));
+    //         itemElems.push(this.contentItem.querySelector('.box__img'));
+    //         itemElems.push(this.contentItem.querySelector('.box__title'));
+    //         itemElems.push(this.contentItem.querySelector('.box__text'));
+    //         itemElems.push(this.contentItem.querySelector('.box__deco'));
+    //         itemElems.push(this.contentItem.querySelector('.overlay__content'));
             
-            for (let el of itemElems) {
-                if ( el == null ) continue;
-                const bounds = el.getBoundingClientRect();
-                const win = {width: window.innerWidth, height: window.innerHeight};
-                TweenMax.to(el, lineEq(0.8, 1.2, win.width, 0, Math.abs(bounds.left+bounds.width - win.width)), {
-                    ease: 'Expo.easeOut',
-                    delay: 0.2,
-                    startAt: {
-                        x: `${lineEq(0, 800, win.width, 0, Math.abs(bounds.left+bounds.width - win.width))}`,
-                        y: `${lineEq(-100, 100, win.height, 0, Math.abs(bounds.top+bounds.height - win.height))}`,
-                        rotationZ: `${lineEq(5, 30, 0, win.width, Math.abs(bounds.left+bounds.width - win.width))}`
-                    },
-                    x: 0,
-                    y: 0,
-                    rotationZ: 0
-                });
-            }
-        }
-        hide() {
-            this.DOM.el.classList.remove('overlay--open');
+    //         for (let el of itemElems) {
+    //             if ( el == null ) continue;
+    //             const bounds = el.getBoundingClientRect();
+    //             const win = {width: window.innerWidth, height: window.innerHeight};
+    //             TweenMax.to(el, lineEq(0.8, 1.2, win.width, 0, Math.abs(bounds.left+bounds.width - win.width)), {
+    //                 ease: 'Expo.easeOut',
+    //                 delay: 0.2,
+    //                 startAt: {
+    //                     x: `${lineEq(0, 800, win.width, 0, Math.abs(bounds.left+bounds.width - win.width))}`,
+    //                     y: `${lineEq(-100, 100, win.height, 0, Math.abs(bounds.top+bounds.height - win.height))}`,
+    //                     rotationZ: `${lineEq(5, 30, 0, win.width, Math.abs(bounds.left+bounds.width - win.width))}`
+    //                 },
+    //                 x: 0,
+    //                 y: 0,
+    //                 rotationZ: 0
+    //             });
+    //         }
+    //     }
+    //     hide() {
+    //         this.DOM.el.classList.remove('overlay--open');
 
-            // show revealer
-            TweenMax.to(this.DOM.reveal, .5, {
-                //delay: 0.15,
-                ease: 'Power3.easeOut',
-                x: '0%',
-                onComplete: () => {
-                    this.DOM.close.style.opacity = 0;
-                    // show scroll
-                    document.body.classList.remove('preview-open');
-                    // hide preview
-                    this.contentItem.style.opacity = 0;
-                    // hide revealer
-                    TweenMax.to(this.DOM.reveal, .5, {
-                        delay: 0,
-                        ease: 'Power3.easeOut',
-                        x: '100%'
-                    });
-                }
-            });
-        }
-    }
+    //         // show revealer
+    //         TweenMax.to(this.DOM.reveal, .5, {
+    //             //delay: 0.15,
+    //             ease: 'Power3.easeOut',
+    //             x: '0%',
+    //             onComplete: () => {
+    //                 this.DOM.close.style.opacity = 0;
+    //                 // show scroll
+    //                 document.body.classList.remove('preview-open');
+    //                 // hide preview
+    //                 this.contentItem.style.opacity = 0;
+    //                 // hide revealer
+    //                 TweenMax.to(this.DOM.reveal, .5, {
+    //                     delay: 0,
+    //                     ease: 'Power3.easeOut',
+    //                     x: '100%'
+    //                 });
+    //             }
+    //         });
+    //     }
+    // }
 
     class Grid {
         constructor(el) {
@@ -269,85 +269,85 @@
                 if ( !item.classList.contains('grid__item--noclick') ) {
                     itemObj.DOM.el.addEventListener('click', (ev) => {
                         ev.preventDefault();
-                        this.openItem(document.querySelector(item.getAttribute('href')));
+                        // this.openItem(document.querySelector(item.getAttribute('href')));
                     });
                 }
             });
 
-            this.overlay = new Overlay();
-            this.overlay.DOM.close.addEventListener('click', () => this.closeItem());
+            // this.overlay = new Overlay();
+            // this.overlay.DOM.close.addEventListener('click', () => this.closeItem());
         }
-        openItem(contentItem) {
-            if ( this.isPreviewOpen ) return;
-            this.isPreviewOpen = true;
-            allowTilt = false;
-            this.overlay.show(contentItem);
-            // "explode" grid..
-            for (let item of this.items) {
-                for (let key in item.DOM.animatable) {
-                    const el = item.DOM.animatable[key];
-                    if ( el ) {
-                        const bounds = el.getBoundingClientRect();
+    //     openItem(contentItem) {
+    //         if ( this.isPreviewOpen ) return;
+    //         this.isPreviewOpen = true;
+    //         allowTilt = false;
+    //         this.overlay.show(contentItem);
+    //         // "explode" grid..
+    //         for (let item of this.items) {
+    //             for (let key in item.DOM.animatable) {
+    //                 const el = item.DOM.animatable[key];
+    //                 if ( el ) {
+    //                     const bounds = el.getBoundingClientRect();
                         
-                        let x;
-                        let y;
-                        const win = {width: window.innerWidth, height: window.innerHeight};
+    //                     let x;
+    //                     let y;
+    //                     const win = {width: window.innerWidth, height: window.innerHeight};
 
-                        if ( bounds.top + bounds.height/2 < win.height/2 - win.height*.1 ) {
-                            //x = getRandomInt(-250,-50);
-                            //y = getRandomInt(20,100)*-1;
-                            x = -1*lineEq(20, 600, 0, win.width, Math.abs(bounds.left+bounds.width - win.width));
-                            y = -1*lineEq(20, 600, 0, win.width, Math.abs(bounds.left+bounds.width - win.width));
-                        }
-                        else if ( bounds.top + bounds.height/2 > win.height/2 + win.height*.1 ) {
-                            //x = getRandomInt(-250,-50);
-                            //y = getRandomInt(20,100);
-                            x = -1*lineEq(20, 600, 0, win.width, Math.abs(bounds.left+bounds.width - win.width));
-                            y = lineEq(20, 600, 0, win.width, Math.abs(bounds.left+bounds.width - win.width))
-                        }
-                        else {
-                            //x = getRandomInt(300,700)*-1;
-                            x = -1*lineEq(10, 700, 0, win.width, Math.abs(bounds.left+bounds.width - win.width));
-                            y = getRandomInt(-25,25);
-                        }
+    //                     if ( bounds.top + bounds.height/2 < win.height/2 - win.height*.1 ) {
+    //                         //x = getRandomInt(-250,-50);
+    //                         //y = getRandomInt(20,100)*-1;
+    //                         x = -1*lineEq(20, 600, 0, win.width, Math.abs(bounds.left+bounds.width - win.width));
+    //                         y = -1*lineEq(20, 600, 0, win.width, Math.abs(bounds.left+bounds.width - win.width));
+    //                     }
+    //                     else if ( bounds.top + bounds.height/2 > win.height/2 + win.height*.1 ) {
+    //                         //x = getRandomInt(-250,-50);
+    //                         //y = getRandomInt(20,100);
+    //                         x = -1*lineEq(20, 600, 0, win.width, Math.abs(bounds.left+bounds.width - win.width));
+    //                         y = lineEq(20, 600, 0, win.width, Math.abs(bounds.left+bounds.width - win.width))
+    //                     }
+    //                     else {
+    //                         //x = getRandomInt(300,700)*-1;
+    //                         x = -1*lineEq(10, 700, 0, win.width, Math.abs(bounds.left+bounds.width - win.width));
+    //                         y = getRandomInt(-25,25);
+    //                     }
                         
-                        TweenMax.to(el, 0.4, {
-                            ease: 'Power3.easeOut',
-                            delay: lineEq(0, 0.3, 0, win.width, Math.abs(bounds.left+bounds.width - win.width)),
-                            x: x,
-                            y: y,
-                            rotationZ: getRandomInt(-10,10),
-                            opacity: 0
-                        }); 
-                    }
-                }
-            }
-        }
-        closeItem() {
-            if ( !this.isPreviewOpen ) return;
-            this.isPreviewOpen = false;
-            this.overlay.hide();
+    //                     TweenMax.to(el, 0.4, {
+    //                         ease: 'Power3.easeOut',
+    //                         delay: lineEq(0, 0.3, 0, win.width, Math.abs(bounds.left+bounds.width - win.width)),
+    //                         x: x,
+    //                         y: y,
+    //                         rotationZ: getRandomInt(-10,10),
+    //                         opacity: 0
+    //                     }); 
+    //                 }
+    //             }
+    //         }
+    //     }
+    //     closeItem() {
+    //         if ( !this.isPreviewOpen ) return;
+    //         this.isPreviewOpen = false;
+    //         this.overlay.hide();
             
-            for (let item of this.items) {
-                for (let key in item.DOM.animatable) {
-                    const el = item.DOM.animatable[key];
-                    if ( el ) {
-                        const bounds = el.getBoundingClientRect();
-                        const win = {width: window.innerWidth};
-                        TweenMax.to(el, 0.6, {
-                            ease: 'Expo.easeOut',
-                            delay: .55 + lineEq(0, 0.2, 0, win.width, Math.abs(bounds.left+bounds.width - win.width)),
-                            x: 0,
-                            y: 0,
-                            rotationZ: 0,
-                            opacity: 1
-                        }); 
-                    }
-                }
-            }
+    //         for (let item of this.items) {
+    //             for (let key in item.DOM.animatable) {
+    //                 const el = item.DOM.animatable[key];
+    //                 if ( el ) {
+    //                     const bounds = el.getBoundingClientRect();
+    //                     const win = {width: window.innerWidth};
+    //                     TweenMax.to(el, 0.6, {
+    //                         ease: 'Expo.easeOut',
+    //                         delay: .55 + lineEq(0, 0.2, 0, win.width, Math.abs(bounds.left+bounds.width - win.width)),
+    //                         x: 0,
+    //                         y: 0,
+    //                         rotationZ: 0,
+    //                         opacity: 1
+    //                     }); 
+    //                 }
+    //             }
+    //         }
 
-            allowTilt = true;
-        }
+    //         allowTilt = true;
+    //     }
     }
 
     let allowTilt = true;
