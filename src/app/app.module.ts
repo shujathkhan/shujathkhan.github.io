@@ -12,13 +12,15 @@ import { WorkComponent } from './work/work.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { VrviewComponent } from './vrview/vrview.component';
+import { EngineComponent } from './engine/engine.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     WorkComponent,
     ProjectsComponent,
-    VrviewComponent
+    VrviewComponent,
+    EngineComponent
   ],
   imports: [
     BrowserModule,

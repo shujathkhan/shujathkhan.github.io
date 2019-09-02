@@ -1,39 +1,8 @@
 .wrapper {
     height: 100vh;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 300;
+    font-family: 'Roboto';
+    font-weight: 500;
     color: whitesmoke;
-  }
-  
-  section {
-    height: 100vh;
-    font-size: 3vh;
-    font-weight: 100;
-    background-color: #22A7F0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  section:nth-child(1) {
-    background: white;
-  }
-  section:nth-child(2) {
-    background: #F64747;
-  }
-  section:nth-child(3) {
-    background: #22A7F0;
-  }
-  section:nth-child(4) {
-    background: #F9690E;
-  }
-  section:nth-child(5) {
-    background: #9B59B6;
-  }
-  section:nth-child(6) {
-    background: #03C9A9;
-  }
-  section:nth-child(7) {
-    background: #ffcc00;
   }
   
   .nav__wrapper {
@@ -45,7 +14,7 @@
     justify-content: flex-end;
   }
   .nav {
-    margin: 0 0 100px 30px;
+    margin:0 0 29vh 6vw;
     
   }
   .nav__counter {
@@ -56,16 +25,37 @@
     font-size: 5vh;
     font-weight: 300;
     margin: 0 0 0.25em;
-    width: 300px;
+    width: auto;
     height: 0;
     overflow: hidden;
     opacity: 0;
+    /* padding-left: 15%; */
     transition: height 0.3s ease-out, opacity 0.2s ease-out;
   }
+  .SecTitle{
+    font-size: 3rem;
+    position: fixed;
+    top: 46%;
+    left: -14.5rem;
+    opacity: 0.;
+    -webkit-text-stroke: 1px black;
+    font-weight: 1000;
+    font-stretch: expanded;
+    letter-spacing: 0.5rem;
+    -webkit-text-fill-color: whitesmoke;
+    transform: rotate(270deg);
+    transition: 0.3s all;
+  }
+
+
+  
   .nav__body {
-    font-weight: 100;
+    font-weight: 300;
     font-size: 2.5vh;
-    width: 300px;
+    width: auto;
+    max-width: 60vw;
+    /* padding-lef  t: 15%; */
+    text-align: justify;
     height: 0;
     overflow: hidden;
     opacity: 0;
@@ -81,7 +71,7 @@
     display: block;
     border-left: 2px solid rgb(0, 0, 0);
     border-top: 2px solid rgb(0, 0, 0);
-    height: 22vh;
+    height: 100vh;
     width: 1.5vw;
     position: absolute;
     left: -2.5vw;
@@ -113,13 +103,111 @@
     font-size: 6vh;
   }
   .nav li.active .nav__title {
-    height: 5vh;
+    height: auto;
     opacity: 1;
     overflow: visible;
   }
   .nav li.active .nav__body {
-    height: 15vh;
+    height: auto;
     opacity: 1;
     overflow: visible;
+  }
+
+  :root {
+    --txt-color: #fff;
+    --txt-box-bg: #424242;
+    --main-bg: #000;
+    /* front page title text */
+    --main-front-color: #00a8ff;
+    --second-front-color: #e84118;
+    --third-front-color: #fbc531;
+  }
+  
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  
+  /* Text */
+  
+  .head-text {
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--txt-color);
+  }
+  
+  .main-text {
+    font-family: "IBM Plex Mono" monospace;
+    color: var(--txt-color);
+  }
+
+  /* IDs */
+  
+  #title-text {
+    position: absolute;
+    /*Color the text with background*/
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /**/
+    /*The animated layer*/
+    background-image:linear-gradient(#000,#000);
+    background-size:100% 100%;
+    background-position:right;
+    background-repeat:no-repeat;
+    /**/
+    transition:1s all;
+    font-weight: bold;
+    text-align: center;
+    font-size: 90px;
+    -webkit-text-stroke: 2px var(--main-front-color);
+    animation: stroke-rainbow 13s linear infinite,
+               text-rainbow 13s linear infinite;
+  }
+  
+  #title-text:hover {
+    background-size:0% 100%;
+  }
+  
+  @keyframes stroke-rainbow {
+    0% {
+      border-color: var(--main-front-color);
+      -webkit-text-stroke-color: var(--main-front-color);
+    }
+    25% {
+      border-color: var(--second-front-color);
+      -webkit-text-stroke-color: var(--second-front-color);
+    }
+    50% {
+      border-color: var(--third-front-color);
+      -webkit-text-stroke-color: var(--third-front-color);
+    }
+    75% {
+      border-color: var(--second-front-color);
+      -webkit-text-stroke-color: var(--second-front-color);
+    }
+    100% {
+      border-color: var(--main-front-color);
+      -webkit-text-stroke-color: var(--main-front-color);
+    }
+  }
+  
+  @keyframes text-rainbow {
+    0% {
+      background-color: var(--main-front-color);
+    }
+    25% {
+      background-color: var(--second-front-color);
+    }
+    50% {
+      background-color: var(--third-front-color);
+    }
+    75% {
+      background-color: var(--second-front-color);
+    }
+    100% {
+      background-color: var(--main-front-color);
+    }
   }
   

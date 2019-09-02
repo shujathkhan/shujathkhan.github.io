@@ -56,9 +56,82 @@ transform: rotate(270deg)
 }
 
 #testit{
-	position: fixed;
-    width: 40vw;
-    left: 6%;
-	bottom: 5%;
-	font-size: 1rem;
+    position: fixed;
+    width: 60vw;
+    right: 20%;
+    bottom: 8%;
+    font-size: 1rem;
+}
+.GitTitle{
+    position: fixed;
+    width: 100vw;
+    text-align: center;
+    bottom: 8%;
+    font-size: 1rem;	
+}
+
+.myProjects{
+	width: 85vw;
+    height: 70vh;
+    background: whitesmoke;
+    margin: 5% 12%;
+}
+.ProjectsSecTitle{
+	
+    position: fixed;
+    top: 18.5%;
+    border-top: 0.2rem black solid;
+    margin: 1% 0%;
+    width:5.6vw;
+    line-height:1.5;
+	border-bottom: 0.2rem black solid;
+    border-right: 0.2rem whitesmoke solid;
+    
+}
+/* .ProjectsSecTitle div:nth-child(-n+3){
+border-bottom:0.5px solid black;
+padding:2%;
+} */
+
+.projSTitle{
+    padding:2%;
+    cursor:pointer;
+    
+}
+.projSTitle:hover{
+    
+    background:black;    
+    color:white;
+    cursor:pointer;
+    opacity:0.5;
+    border-radius: 5%;
+    margin: 5%;
+}
+
+
+
+
+.ProjectsSecBody{
+	width: 62vw;
+    height: 70vh;
+    background: whitesmoke;
+    margin-left: 6.6%;
+    border-left: 0.2rem solid black;
+    border-right: 0.2rem solid black;
+    border-top: 0.2rem solid black;
+    border-bottom: 0.2rem solid black;
+}
+.ProjectsSecNav{
+    position: fixed;
+    right: 15%;
+    top: 21%;
+    font-size: 1.5rem;
+    border-right: 0.2rem solid;
+    border-bottom: 0.2rem solid;
+    width: 2.6vw;
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-top: 0.2rem solid;
+    border-left: 0.2rem solid whitesmoke;
 }
