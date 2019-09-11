@@ -4,7 +4,7 @@
     font-weight: 500;
     color: whitesmoke;
   }
-  
+
   .nav__wrapper {
     position: fixed;
     height: 100%;
@@ -14,15 +14,16 @@
     justify-content: flex-end;
   }
   .nav {
-    margin:0 0 29vh 6vw;
-    
+    position: relative;
+    left: 12%;
+    top: 1%;
   }
   .nav__counter {
-    font-size: 24px;
+    font-size: 3vh;
     transition: all 0.15s ease-out;
   }
   .nav__title {
-    font-size: 5vh;
+    font-size: 4vh;
     font-weight: 300;
     margin: 0 0 0.25em;
     width: auto;
@@ -33,10 +34,10 @@
     transition: height 0.3s ease-out, opacity 0.2s ease-out;
   }
   .SecTitle{
-    font-size: 3rem;
+    font-size: 5vh;
     position: fixed;
-    top: 46%;
-    left: -14.5rem;
+    top: 46vh;
+    left: -10.5rem;
     opacity: 0.;
     -webkit-text-stroke: 1px black;
     font-weight: 1000;
@@ -48,7 +49,7 @@
   }
 
 
-  
+
   .nav__body {
     font-weight: 300;
     font-size: 2.5vh;
@@ -96,11 +97,11 @@
   }
   .nav li.active:after {
     width: 2.5vw;
-    height: 30vh;
+    height: 100vh;
     top: 4vh;
   }
   .nav li.active .nav__counter {
-    font-size: 6vh;
+    font-size: 3vh;
   }
   .nav li.active .nav__title {
     height: auto;
@@ -122,27 +123,27 @@
     --second-front-color: #e84118;
     --third-front-color: #fbc531;
   }
-  
+
   * {
     margin: 0px;
     padding: 0px;
   }
-  
-  
+
+
   /* Text */
-  
+
   .head-text {
     font-family: "IBM Plex Sans", sans-serif;
     color: var(--txt-color);
   }
-  
+
   .main-text {
     font-family: "IBM Plex Mono" monospace;
     color: var(--txt-color);
   }
 
   /* IDs */
-  
+
   #title-text {
     position: absolute;
     /*Color the text with background*/
@@ -160,16 +161,16 @@
     transition:1s all;
     font-weight: bold;
     text-align: center;
-    font-size: 90px;
+    font-size: 9vh;
     -webkit-text-stroke: 2px var(--main-front-color);
     animation: stroke-rainbow 13s linear infinite,
                text-rainbow 13s linear infinite;
   }
-  
+
   #title-text:hover {
     background-size:0% 100%;
   }
-  
+
   @keyframes stroke-rainbow {
     0% {
       border-color: var(--main-front-color);
@@ -192,7 +193,7 @@
       -webkit-text-stroke-color: var(--main-front-color);
     }
   }
-  
+
   @keyframes text-rainbow {
     0% {
       background-color: var(--main-front-color);
@@ -210,4 +211,3 @@
       background-color: var(--main-front-color);
     }
   }
-  
