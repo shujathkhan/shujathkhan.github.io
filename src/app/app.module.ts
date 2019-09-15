@@ -13,6 +13,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { VrviewComponent } from './vrview/vrview.component';
 import { EngineComponent } from './engine/engine.component';
+import { CursorComponent } from './cursor/cursor.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { EngineComponent } from './engine/engine.component';
     WorkComponent,
     ProjectsComponent,
     VrviewComponent,
-    EngineComponent
+    EngineComponent,
+    CursorComponent
   ],
   imports: [
     BrowserModule,

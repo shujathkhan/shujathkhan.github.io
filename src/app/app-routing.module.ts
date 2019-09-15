@@ -7,11 +7,11 @@ import { VrviewComponent } from './vrview/vrview.component';
 import {EngineComponent} from './engine/engine.component';
 
 const routes: Routes = [
-  {path:'home',component:HomeComponent},
-  {path:'work',component:WorkComponent},
-  {path:'vrview',component:VrviewComponent},
-  {path:'engine',component:EngineComponent},
-  {path:'projects',component:ProjectsComponent},
+  {path: 'home', component: HomeComponent},
+  {path: 'work', component: WorkComponent},
+  {path: 'vrview', component: VrviewComponent},
+  {path: 'engine', component: EngineComponent},
+  {path: 'projects', component: ProjectsComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
