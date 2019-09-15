@@ -467,6 +467,8 @@ section{
 }
 .reflectIam{
   font-size:6vh;
+  width: 60vw;
+  overflow-wrap:break-word;
 }
 
 
