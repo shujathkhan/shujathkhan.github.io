@@ -1,8 +1,6 @@
 .SecTitle{
     font-size: 10vh;
-    position: fixed;
-    top: 25%;
-    left: -10%;
+    padding: 5vh 0vw;
 	text-transform: uppercase;
 	opacity:0.5;
 	-webkit-text-stroke: 1px black;
@@ -10,10 +8,19 @@ font-weight: 1000;
 font-stretch:expanded;
 letter-spacing: 0.5vw;
 -webkit-text-fill-color: whitesmoke;
-transform: rotate(270deg)
+
 }
+.mainContainer{
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
+}
+.titleContainer{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
 section{
-	width: 100vw;
+	width: 90vw;
 	height: 100vh;
 }
 .SecDesc{
@@ -29,26 +36,26 @@ section{
 
 .SkillsTitle{
   font-size: 10vh;
-position: fixed;
-bottom: 22%;
+
 opacity:0.5;
-left: -5%;
+padding: 5vh 0vw;
 -webkit-text-stroke: 1px black;
 font-weight: 1000;
 font-stretch:expanded;
 letter-spacing: 0.5vw;
 -webkit-text-fill-color: whitesmoke;
-transform: rotate(270deg)
+
 }
 .skillsContent{
-	display: flex;
-	flex-flow: row;
-	justify-content: space-around;
-	position: fixed;
-	right: 5%;
-	padding-top: 6%;
-	flex-wrap: wrap;
-	width:80%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  padding-left: 8vw;
+  margin-top: 13vh;
+  flex-wrap: wrap;
+  width: 85vw;
+  height: 41vh;
+  overflow: auto;
 }
 .skillsContent > div{
 	margin:10px;
@@ -56,72 +63,82 @@ transform: rotate(270deg)
 }
 
 #testit{
-    position: fixed;
-    width: 60vw;
-    right: 20%;
-    bottom: 8%;
-    font-size: 1rem;
+  width: 80vw;
+  font-size: 1vh;
 }
-.GitTitle{
-    position: fixed;
-    width: 100vw;
-    text-align: center;
-    bottom: 8%;
-    font-size: 1rem;
+.GitTitle{ 
+
+  text-align: left;
+  padding-left: 5rem;
+  font-size: 1rem;
 }
 
 .myProjects{
-	width: 85vw;
-    height: 70vh;
-    background: whitesmoke;
-    margin: 5% 12%;
+  width: 80vw;
+  height: 70vh;
+  background: whitesmoke;
+  margin: -25vh 0vw 0vh 8vw;
+  display: grid;
+  /* grid-template-columns: repeat(2,1fr); */
+  grid-template-rows: repeat(2,1fr);
 }
 .ProjectsSecTitle{
 
-    position: fixed;
-    top: 18.5%;
-    border-top: 0.2rem black solid;
-    margin: 1% 0%;
-    width:5.6vw;
-    line-height:1.5;
-	border-bottom: 0.2rem black solid;
-    border-right: 0.2rem whitesmoke solid;
-
+  border-top: 0.25vh black solid;
+  width: 42.7vh;
+  height: 3vh;
+  display: grid;
+  grid-auto-flow: column;
+  padding: 1.1vh;
+  transform: skew(-25deg, 0deg);
+  -webkit-transform: perspective(17vh) rotateX(0deg);
+  text-align: center;
+  /* border-left: 0.25vh solid; */
+  position: absolute;
+  z-index: 1;
+  left: 10vw;
+  /* top: 20vh; */
 }
-/* .ProjectsSecTitle div:nth-child(-n+3){
-border-bottom:0.5px solid black;
-padding:2%;
-} */
+.projSTitle:not(:last-child) {
+  border-right: 0.25vh solid;
+}
 
 .projSTitle{
-    padding:2%;
-    cursor:pointer;
+  padding: 0.15vh 0vw 0vh 0vw;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
 
 }
 
 
 
 .ProjectsSecBody{
-	width: 62vw;
-    height: 70vh;
-    background: whitesmoke;
-    margin-left: 6.6%;
-    border-left: 0.2rem solid black;
-    border-right: 0.2rem solid black;
-    border-top: 0.2rem solid black;
-    border-bottom: 0.2rem solid black;
+  width: 80vw;
+  height: 70vh;
+  background: whitesmoke;
+  border-left: 0.25vh solid black;
+  border-right: 0.25vh solid black;
+  border-top: 0.25vh solid black;
+  border-bottom: 0.25vh solid black;
+  overflow-y: auto;
+  overflow-x:hidden;
 }
 .ProjectsSecNav{
-    position: fixed;
-    right: 15%;
-    top: 21%;
-    font-size: 1.5rem;
-    border-right: 0.2rem solid;
-    border-bottom: 0.2rem solid;
-    width: 2.6vw;
-    padding-left: 1%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    border-top: 0.2rem solid;
-    border-left: 0.2rem solid whitesmoke;
+  font-size: 5vh;
+  width: 2vw;
+  height: 10vh;
+  z-index: 5;
+  float: right;
+  margin: 12rem 1.5rem 13rem;
+
+}
+.skillMainContainer{
+  display: grid;
+  grid-template-rows: repeat(3,6VH);
+  
+}
+.githubSec{
+  margin-top: 50vh;
+  padding-left: 8vw;
 }

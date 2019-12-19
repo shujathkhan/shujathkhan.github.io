@@ -6,7 +6,7 @@ import * as luxy from 'luxy.js';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'fxmulti';
+  title = '[Dev] Shujath Khan';
 
 
   ngOnInit() {

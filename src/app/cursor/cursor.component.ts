@@ -58,7 +58,7 @@ export class CursorComponent implements OnInit {
       const strokeColor = "'#000000'";
       const strokeWidth = 1;
       const segments = 8;
-      const radius = 10;
+      const radius = 15;
 
       // we'll need these later for the noisy circle
       const noiseScale = 150; // speed

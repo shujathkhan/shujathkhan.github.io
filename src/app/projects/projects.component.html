@@ -1,57 +1,68 @@
 <section>
-<div>
-       
-                <div class="SecTitle">
-                    Projects                   
-                </div>
-                 <br>
-                <!-- <div class="SecDesc">
-                        Self-Taught | Creative | Inspired                  
-                        <br/>
-                        The recipes I have prepared and perfected over the years!
-                </div> -->
-       
-                <div class="myProjects">
-                    <div class="ProjectsSecTitle">
-                        <div class="projSTitle">
-                            Web 
-                        </div>
-                        <div class="projSTitle">
-                            Mobile 
-                        </div>
-                        <div class="projSTitle">
-                            VR
-                        </div>
-                        <div class="projSTitle">
-                            AI
-                        </div>
-                    </div>
-                    <div class="ProjectsSecBody">
-                        
-                    </div>
-                    <div class="ProjectsSecNav">
-                            <div class="navIcon">
-                                <i class="fa fa-angle-up"></i>
-                            </div>
-                            <div class="navIcon">
-                                    <i class="fa fa-angle-down"></i>
-                            </div>
-                    </div>
-                </div>
-   
-    </div>
+  <div class="mainContainer">
+      <div class="titleContainer">
+
+          <div class="SecTitle">
+              Projects
+          </div>
+          <div class="backIcon">
+            <i class="fa fa-angle-left"></i>
+          </div>
+          <!-- <div class="SecDesc">
+                  Self-Taught | Creative | Inspired
+                  <br/>
+                  The recipes I have prepared and perfected over the years!
+          </div> -->
+
+      </div>
+      <div class="myProjects">
+          <div class="ProjectsSecTitle">
+              <div class="projSTitle">
+                  Web
+              </div>
+              <div class="projSTitle">
+                  Mobile
+              </div>
+              <div class="projSTitle">
+                  VR
+              </div>
+              <div class="projSTitle">
+                  AI
+              </div>
+          </div>
+          <div class="ProjectsSecBody">
+            <div style="text-align: center"><h3>UNDER CONSTRUCTION</h3></div>
+              <div class="ProjectsSecNav">
+                  <div class="navIcon">
+                      <i class="fa fa-angle-up"></i>
+                  </div>
+                  <div class="navIcon">
+                          <i class="fa fa-angle-down"></i>
+                  </div>
+          </div>
+          </div>
+          
+      </div>
+
+
+  </div>
+
 </section>
 <section>
-    <div class="SkillsTitle">
-        SKILLS
-    </div>
+
+  <div class="skillMainContainer">
+      <div class="SkillsTitle">
+          SKILLS
+      </div>
+  
+
     <div class="skillsContent">
         <div  *ngFor="let img of URLS">
-                
+
             <img [src]="img" style="width: 3rem;height: 3rem;object-fit: cover;"/>
-            
-        </div>
-        <div>
+
+          </div>
+      <div>
                 <img src="https://logo.clearbit.com/mongodb.org"/>
         </div>
         <div>
@@ -59,12 +70,13 @@
         </div>
     </div>
     <div class="githubSec">
+        <div id="testit"></div>
 
         <div class="GitTitle">
             Contributions on <i class="fa fa-github"></i>
         </div>
-            <div id="testit"></div> 
-       
+            
     </div>
-    
+  </div>
+
 </section>

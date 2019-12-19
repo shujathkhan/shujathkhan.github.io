@@ -7,7 +7,7 @@ export class TextScramble {
     public queue;
     public frameRequest;
     public frame;
-    constructor(el) {
+    constructor(el: Element) {
       this.el = el
       this.chars = '!<>-_\\/]{[}—=+*>^?#<_~________'
       this.update = this.update.bind(this)

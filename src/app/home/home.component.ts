@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import {TextScramble} from './TextScramble';
 @Component({
   selector: 'app-home',
@@ -7,10 +7,10 @@ import {TextScramble} from './TextScramble';
 })
 
 
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewInit {
 
   constructor() { }
-
+  public respMode = false;
   ngOnInit() {
     
     const phrases = [
@@ -50,6 +50,12 @@ export class HomeComponent implements OnInit {
     this.loadScript('../assets/js/TweenMax.min.js');
     this.loadScript('../assets/js/menugrid.js');
     
+  }
+
+  ngAfterViewInit(){
+    if(window.screen.orientation.type != 'portrait-primary'){
+      this.respMode = true;
+    }
   }
 
   public loadScript(url: string) {
