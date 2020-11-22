@@ -5,9 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-import {MatGridListModule} from '@angular/material/grid-list';
-import {MatCardModule} from '@angular/material/card';
+import { CommonModule } from "@angular/common";
 import { WorkComponent } from './work/work.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
@@ -27,8 +25,7 @@ import { CursorComponent } from './cursor/cursor.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatGridListModule,
-    MatCardModule,
+    CommonModule,
     BrowserAnimationsModule
   ],
   providers: [],
