@@ -649,6 +649,7 @@ input[type="reset"].button-primary,
 input[type="button"].button-primary {
 	background: #313131;
 	color: #FFFFFF;
+	width: max-content;
 }
 .button.button-primary:hover,
 a.button.button-primary:hover,
