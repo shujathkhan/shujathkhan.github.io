@@ -13,6 +13,21 @@
   
 <link rel="stylesheet" href="https://shujathkhan.github.io/v2/styles.1f95243e5fe1f7b3bf06.css"></head>
 <body>
+  <!-- Github Pages hack to allow SPA refresh without receiving 404. -->
+  <script>
+    (function () {
+      // Retrieve the URL the user was trying to access when receiving the 404.
+      var redirect = sessionStorage.redirect;
+      // Remove the URL from sessionStorage.
+      delete sessionStorage.redirect;
+      // Check if we actually need to redirect.
+      if (redirect && redirect != location.href) {
+        // We need to redirect to the URL the user was trying to access.
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
+<!-- /Github Pages hack. -->
   <app-root></app-root>
 <script src="https://shujathkhan.github.io/v2/runtime-es2015.8830825d22ee444ce793.js" type="module"></script><script src="https://shujathkhan.github.io/v2/runtime-es5.8830825d22ee444ce793.js" nomodule="" defer=""></script><script src="https://shujathkhan.github.io/v2/polyfills-es5.34b001c89780b4b71185.js" nomodule="" defer=""></script><script src="https://shujathkhan.github.io/v2/polyfills-es2015.6352319c90a3a3399713.js" type="module"></script><script src="https://shujathkhan.github.io/v2/main-es2015.01f599273478f7f984f0.js" type="module"></script><script src="https://shujathkhan.github.io/v2/main-es5.01f599273478f7f984f0.js" nomodule="" defer=""></script></body>
 </html>
