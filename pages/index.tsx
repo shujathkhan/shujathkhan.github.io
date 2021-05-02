@@ -1,22 +1,53 @@
+import React from 'react';
 import Head from 'next/head';
 import styles from 'styles/home.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab, faFacebook, faGithub, faLinkedin, faStackOverflow, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import Link from "next/link";
 import { faCode } from '@fortawesome/free-solid-svg-icons';
+import * as THREE from 'three';
+import FOG from 'vanta/dist/vanta.fog.min'
+
+
 library.add(fab, faGithub, faLinkedin, faStackOverflow, faCode, faFacebook, faTwitter);
 
 export default function Home() {
-  
+  const bodyRef = React.useRef(null);
+  const [vantaEffect, setVantaEffect] = React.useState(null)
+
+  React.useEffect(()=> {
+    if (!vantaEffect) {
+      setVantaEffect(FOG({
+        THREE,
+        el: bodyRef.current,
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        highlightColor: 0x5cb7d4,
+        midtoneColor: 0xdad8ff,
+        lowlightColor: 0x166dea,
+        baseColor: 0xffffff,
+        speed: 1.40
+      }))
+    }
+    const containerEl = document.querySelector("div#__next > div");
+    containerEl.setAttribute('style', 'position:unset');
+    const canvasEl:HTMLElement | any = document.getElementsByClassName('vanta-canvas')[0];
+    canvasEl.style.width = '100%';
+    canvasEl.style.height = '100%';
+    return () => {
+      if (vantaEffect) vantaEffect.destroy()
+    }
+  },[vantaEffect])
+
   return (
-    <div>
+    <div ref={bodyRef}>
+     
       <Head>
         <title>Shujath Khan</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       </Head>
-
       <main className={styles.container}>
         <div className={styles.photoContainer}>
           <img src="https://user-images.githubusercontent.com/13440061/116815045-5fb4a980-ab79-11eb-9965-396d5e9a4b93.jpg" className={styles.photo}/>
@@ -41,7 +72,7 @@ export default function Home() {
             <u>Note</u>: This portfolio is still under construction.
           </div>  
         </div>
- 
+        
       </main>
 
     </div>
