@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "replaceFilePaths": "node replaceInFiles.js",
-    "build:static": "next build && next export && node replacer"
+    "build:static": "next build && next export"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
