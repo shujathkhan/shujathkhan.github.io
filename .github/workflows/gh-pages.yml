@@ -26,9 +26,9 @@ jobs:
           npm install
       - name: Run build
         run: |
-          npm run build
+          npm run build:static
       - name: Publish generatede content to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
-          folder: docs
+          folder: out
