@@ -1,0 +1,81 @@
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: content-box;
+    height: calc(100vh - 50px);
+    .photoContainer {
+        margin: 0 100px;
+        .photo {
+            border-radius: 50%;
+            object-fit: cover;
+            width: 55vw;
+            height: 55vw;
+            max-width: 300px;
+            max-height: 300px;
+            box-shadow: 0px 0px 8px 0px;
+        }
+        .photo:hover {
+            box-shadow: 0px 0px 8px 4px;
+        }
+        .oldPortfolio{
+            position: absolute;
+            top: 150px;
+            left: 450px;
+            font-family: "Roboto", sans-serif;
+            font-size: 20px;
+            max-width: 500px;
+            text-align: justify;
+            margin-bottom: 20px;
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 50px;
+        }
+    }
+    .content {
+        margin: 0 5vw   ;
+        .introduction {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            font-size: 50px;
+        }
+        .about {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            max-width: 500px;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        .socialsConatainer{
+            display: flex;
+            flex-flow: row;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+        }
+        .warning{
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            max-width: 500px;
+            text-align: justify;
+            margin-bottom: 20px;
+            color: red;
+            border: 1px dashed black;
+            padding: 10px;
+            cursor: not-allowed;
+        }
+    }
+}
+.links {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    color: initial;
+    margin-right: 10px;
+}
