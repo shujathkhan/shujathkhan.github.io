@@ -6,7 +6,8 @@
     "dev": "next dev -p 8080",
     "build": "next build",
     "start": "next start",
-    "build:static": "next build && next export"
+    "replaceFilePaths": "node replaceInFiles.js",
+    "build:static": "next build && next export && node replacer"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
@@ -18,6 +19,7 @@
     "next": "^10.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "replace-in-file": "^6.2.0",
     "sass": "^1.32.10",
     "three": "^0.128.0",
     "vanta": "^0.5.21"
