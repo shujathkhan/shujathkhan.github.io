@@ -3,7 +3,7 @@ const path = require("path");
 module.exports = (phase, { defaultConfig }) => {
   return {
     ...defaultConfig,
-    distDir: 'docs',
+    distDir: 'build',
     future: {
         webpack5: true,
     },
