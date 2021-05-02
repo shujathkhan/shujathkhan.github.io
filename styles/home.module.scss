@@ -64,18 +64,18 @@
             padding: 10px;
             cursor: not-allowed;
         }
+        .links {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        
+        .icon {
+            width: 30px;
+            height: 30px;
+            text-decoration: none;
+            color: initial;
+            margin-right: 10px;
+        }
     }
-}
-.links {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-}
-
-.icon {
-    width: 30px;
-    height: 30px;
-    text-decoration: none;
-    color: initial;
-    margin-right: 10px;
 }
