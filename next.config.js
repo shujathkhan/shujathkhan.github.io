@@ -4,10 +4,8 @@ module.exports = (phase, { defaultConfig }) => {
   
   return {
     ...defaultConfig,
-    exportPathMap: () => ({
-      '/': { page: '/' },
-    }),
-    assetPrefix: "/shujathkhan.github.io",
+    assetPrefix: ".",
+    trailingSlash: true
   };
 };
 
