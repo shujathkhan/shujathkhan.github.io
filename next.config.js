@@ -2,7 +2,8 @@ const path = require("path");
 
 module.exports = (phase, { defaultConfig }) => {
   return {
-    assetPrefix: ".",
+    ...defaultConfig,
+    assetPrefix: "https://cdn.statically.io/gh/shujathkhan/shujathkhan.github.io/gh-pages/",
     trailingSlash: true
   };
 };
